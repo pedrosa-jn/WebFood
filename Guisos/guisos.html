@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sopas, Potajes y Guisos</title>
+		<link rel="shortcut icon" href="./Img/IconGuiso.png"/>
+		<link rel="stylesheet" type="text/css" href="./css/Estilos.css">
+		<link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	</head>
+	<body>
+
+		<nav class="Navegador">
+			<ul>
+				<li><hr><a class="EnlaceMenu" id="Home" href="../index.html">Home</a><hr></li>
+				<li><a class="EnlaceMenu" href="../Salsas/salsas.html"><img src="../Img/IconSalsa.png">Salsas</a></li>
+				<li><a class="EnlaceMenu" href="../Ensaladas/ensaladas.html"><img src="../Img/IconEnsalada.png">Ensaladas</a></li>
+				<li><a class="EnlaceMenu" href="../Ensaladas/ensaladas/Mobile.html"><img src="../Img/IconPasta.png">Pasta</a></li>
+				<li><a class="EnlaceMenu" href="../Ensaladas/ensaladas/Mobile.html"><img src="../Img/IconCarne.png">Carne</a></li>
+				<li><a class="EnlaceMenu" href="../Ensaladas/ensaladas/Mobile.html"><img src="../Img/IconPollo.png">Pollo</a></li>
+				<li><a class="EnlaceMenu" href="../Ensaladas/ensaladas/Mobile.html"><img src="../Img/IconPescado.png">Pesccado</a></li>
+				<li><a class="EnlaceMenu" href="../Ensaladas/ensaladas/Mobile.html"><img src="../Img/IconOtros.png">Otros</a></li>
+				<li><a class="EnlaceMenu" href="../Ensaladas/ensaladas/Mobile.html"><img src="../Img/IconPostre.png">Postres</a></li>
+			</ul>
+			<div class="Menu Transitions">
+					<div class="Transitions" id="barra1"></div>
+					<div class="Transitions" id="barra2"></div>
+					<div class="Transitions" id="barra3"></div>
+			</div>
+
+			<script type="text/javascript">
+				$ (function(){
+					$(".Menu").click(function(){
+						console.log("click")
+						
+					$("nav.Navegador ul").slideToggle(2000)
+					$(".Menu,body,ul").toggleClass("Abierto")
+				});
+				});
+			</script>
+		</nav>
+
+		<section><div id="Velo"></div>
+			
+			<div id="Titulo">
+				<a href="../index.html"><div id="back"><</div></a>
+				<img src="./Img/IconGuiso.png">
+				<h3>
+					<span>Sopas,</span>
+		    		<span>Potajes y Guisos</span>
+		    	</h3>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador1">Sopa al Cuarto de Hora</h2>
+					<div class="Descripcion" id="CuartoHora">
+					<ul class="Ingredientes">
+						<li>1 tronco pequeño de rape</li><hr>
+						<li>300 g. de gambas peladas</li><hr>
+						<li>1/2 Kg. de almejas</li><hr>
+						<li>1 cebolla</li><hr>
+						<li>3 dientes de ajo</li><hr>
+						<li>200 g. de taquitos de jamón</li><hr>
+						<li>3 cucharadas de tomate frito</li><hr>
+						<li>3 rebanadas de pan de molde</li><hr>
+						<li>2 huevos cocidos</li><hr>
+						<li>50 g. de guisantes congelados</li><hr>
+						<li>50 g. de arroz</li><hr>
+						<li>1/2 vaso de vino blanco</li><hr>
+						<li>Azafrán y perejil fresco</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Cortar el pan de molde en cuadrados pequeños y freírlos en una cacerola con abundante aceite de oliva virgen extra.</li><br>
+						<li>Cuando hayan cogido color apartaremos los picatostes sobre papel de cocina para que escurran.</li><br>
+						<li>Pelar las gambas, reservar los cuerpos al frío y comenzar a dorar las cáscaras en la cacerola anterior. Una vez que estén bien fritas las apartaremos y las desecharemos.Esta parte es opcional)</li><br>
+						<li>En ese mismo aceite rehogamos la cebolla y el jamón picados. Dejaremos rehogar 5 minutos.</li><br>
+						<li>Limpiar el rape, retirar la espina y cortar los lomos en trozos más pequeños.</li><br>
+						<li>Cubrir entonces con agua y añadir 3 cucharadas de tomate frito.</li><br>
+						<li>Mientras el caldo comienza a hervir haremos un “majao” en el mortero con la sal, los ajos, el azafrán, las yemas de los huevos cocidos y el vino blanco. Lo echaremos sobre la sopa junto con el arroz y los guisantes. Cocinaremos a fuego medio durante 10 minutos; desespumando si fuera preciso.</li><br>
+						<li>Pasado este tiempo incorporar las almejas bien lavadas, el rape troceado y los cuerpos de las gambas. Mantener a fuego medio-alto durante 5 minutos.</li><br>
+						<li>Como guarnición picaremos las claras de los huevos y las mezclaremos con el perejil picado y los dados de pan frito.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador1").click(function(){
+								console.log("click")
+								
+							$("#CuartoHora").slideToggle(2000)
+						});
+						});
+					</script>	
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador2">Crema Calabacín</h2>
+					<div class="Descripcion" id="CremaCalabacin">
+					<ul class="Ingredientes">
+						<li>3 calabacines</li><hr>
+						<li>1 cebolla</li><hr>
+						<li>1 puerro</li><hr>
+						<li>7 u 8 quesitos</li><hr>
+						<li>3 ó 4 patatas</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Pelar y trocear la verdura.</li><br>
+						<li>Poner un poco de aceite en la olla y sofreír todo.</li><br>
+						<li>Añadir agua, sal y avecrem.</li><br>
+						<li>Cocer todo en la olla unos 15’.</li><br>
+						<li>Pasado este tiempo abrir la olla, y triturar con la batidora y los quesitos.</li>
+					</ul>
+					</div>
+				</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador2").click(function(){
+								console.log("click")
+								
+							$("#CremaCalabacin").slideToggle(2000)
+						});
+						});
+					</script>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador3">Gazpachuelo o Sopa de mayonesa de<br>la Abuela Carmen</h2>
+					<div class="Descripcion" id="AbuelaCarmen">
+					<ul class="Ingredientes">
+						<li>Tres o cuatro patatas dependiendo de los comensales</li><hr>
+						<li>Agua</li><hr>
+						<li>Sal</li><hr>
+						<li>Una pastilla de avecrem</li><hr>
+						<li>Mayonesa</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Ponemos a hervir agua en una cacerola y añadimos sal y avecrem.</li><br>
+						<li>Pelamos las patatas y las cortamos en rodajas gruesas.</li><br>
+						<li>Cuando el agua esté hirviendo añadimos las patatas y las dejamos cocer hasta que estén blandas, unos 10- 15 minutos.Sacamos las patatas aparte.</li><br>
+						<li>Preparamos una mayonesa.</li><br>
+						<li>En una sopera ponemos la mayonesa y poco a poco vamos echando el agua no muy caliente de las patatas y batimos con la minipimer.</li><br>
+						<li>Añadimos las patatas y servimos.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador3").click(function(){
+								console.log("click")
+								
+							$("#AbuelaCarmen").slideToggle(2000)
+						});
+						});
+					</script>	
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador4">Sopa de mayonesa de<br>la Abuela Cheli</h2>
+					<div class="Descripcion" id="AbuelaCheli">
+					<ul class="Ingredientes">
+						<li>Mayonesa</li><hr>
+						<li>1/2 kg de gambas arroceras</li><hr>
+						<li>Rape o pescada</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Ponemos  a hervir agua en una cacerola y añadimos sal.</li><br>
+						<li>Cuando el agua esté hirviendo añadimos cocemos las gambas con el pescado y  con la pastilla de avecrem de pescado unos 10- 15 minutos.</li><br>
+						<li>Cuando el pescado y las gambas estén frías las pelamos y reservamos.</li><br>
+						<li>Preparamos una mayonesa.</li><br>
+						<li>En una sopera ponemos la mayonesa y poco a poco vamos echando el agua no muy caliente de las gambas y el pescado y batimos con la minipimer.</li><br>
+						<li>Añadimos las gambas y servimos.Se puede tomar caliente o fría.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador4").click(function(){
+								console.log("click")
+								
+							$("#AbuelaCheli").slideToggle(2000)
+						});
+						});
+					</script>
+				</div>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador5">Lentejas</h2>
+					<div class="Descripcion" id="Lentejas">
+					<ul class="Ingredientes">
+						<li>1/2 Kg de lentejas que se mantienen en remojo la noche anterior</li><hr>
+						<li>1/2 cebolla</li><hr>
+						<li>3 o 4 dientes de ajo</li><hr>
+						<li>1 tomate</li><hr>
+						<li>1 zanahoria</li><hr>
+						<li>1 rozo de pimiento</li><hr>
+						<li>1 hoja de laurel</li><hr>
+						<li>1/2 vaso de aceite</li><hr>
+						<li>1 hueso de jamón</li><hr>
+						<li>1 pastilla de avecrem</li><hr>
+						<li>Chorizo</li><hr>
+						<li>1 cucharada de pimentón</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se lavan las lentejas, siempre con agua fría y se ponen en una olla con agua.</li><br>
+						<li>Le damos un hervor durante 5’.</li><br>
+						<li>Añadimos todos los ingredientes y los tenemos en la olla a presión unos 20’ (También se pueden cocinar  en la cacerola una hora más o menos moviéndolas con frecuencia para que no se agarren).</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador5").click(function(){
+								console.log("click")
+								
+							$("#Lentejas").slideToggle(2000)
+						});
+						});
+					</script>
+
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador6">Alubias</h2>
+					<div class="Descripcion" id="Alubias">
+					<ul class="Ingredientes">
+						<li>1/2 Kg de alubias que se mantienen en remojo la noche anterior</li><hr>
+						<li>1/2 cebolla</li><hr>
+						<li>3 o 4 dientes de ajo</li><hr>
+						<li>1 tomate</li><hr>
+						<li>1 zanahoria</li><hr>
+						<li>1 rozo de pimiento</li><hr>
+						<li>1 hoja de laurel</li><hr>
+						<li>1/2 vaso de aceite</li><hr>
+						<li>1 hueso de jamón</li><hr>
+						<li>1 pastilla de avecrem</li><hr>
+						<li>Chorizo</li><hr>
+						<li>1 cucharada de pimentón y azafrán</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se lavan las alubias , siempre con agua fría y se ponen en una olla con agua.</li><br>
+						<li>Le damos un hervor durante 5’, tiramos el agua y volvemos a echar agua fría.</li><br>
+						<li>Añadimos todos los ingredientes y los tenemos en la olla a presión unos 20’.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador6").click(function(){
+								console.log("click")
+								
+							$("#Alubias").slideToggle(2000)
+						});
+						});
+					</script>
+
+				</div>	
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador7">Alubias de Miguel Ángel</h2>
+					<div class="Descripcion" id="MiguelAngel">
+					<ul class="Ingredientes">
+						<li>Alubias en remojo 12 horas</li><hr>
+						<li>1 cabeza de ajo entera</li><hr>
+						<li>1 cebolla entera</li><hr>
+						<li>2 hojas de laurel</li><hr>
+						<li>Tocineta o punta de jamón ibérico</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se ponen en la olla todos los ingredientes con agua y sal y se cuecen durante unos 30’.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador7").click(function(){
+								console.log("click")
+								
+							$("#MiguelAngel").slideToggle(2000)
+						});
+						});
+					</script>
+
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador8">Cocido</h2>
+					<div class="Descripcion" id="Cocido">
+					<ul class="Ingredientes">
+						<li>1/2 kg de garbanzos</li><hr>
+						<li>Un pedazo de tocino salado gordo ( un par de trozos)</li><hr>
+						<li>1 hueso  canilla y otro de vaca</li><hr>
+						<li>Una punta  de jamón</li><hr>
+						<li>Dos trozos de chorizo y morcilla (opcional)</li><hr>
+						<li>1/2 kg de morcillo y cuarto trasero de pollo</li><hr>
+						<li>Sal</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Dejar los garbanzos en remojo la noche anterior.</li><br>
+						<li>Se ponen los garbanzos en la olla con agua caliente hasta cubrirlos ligeramente.</li><br>
+						<li>Se añade el tocino, los huesos y la carne y se tiene en la olla hirviendo durante unos 15’.</li><br>
+						<li>Se le va quitando la espuma con la espumadera.</li><br>
+						<li>Se saca el caldo que se ha formado y se cuela en otra cacerola.</li><br>
+						<li>Se vuelve a echar agua en la olla con los huesos y carne y se cubre algo más que antes.</li><br>
+						<li>Se cierra la olla y se tiene hirviendo unos 20’.</li><br>
+						<li>Transcurrido este tiempo, se abre la olla. Se le añade el chorizo y la morcilla, se cierra y se tiene hirviendo unos 5’.(esto es opcional)</li><br>
+						<li>Se mezclan los dos caldos dejando un poco con los garbanzos...</li><br>
+						<li>Servir la sopa con fideos de primer plato y de segundo los garbanzos con la carne.</li><br>
+						<li>Se pueden añadir patatas cocidas, judías verdes.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador8").click(function(){
+								console.log("click")
+								
+							$("#Cocido").slideToggle(2000)
+						});
+						});
+					</script>
+
+				</div>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador9">Potaje de Garbanzos</h2>
+					<div class="Descripcion" id="PotajeGarbanzos">
+					<ul class="Ingredientes">
+						<li>1/2 kg de garbanzos previamente remojados</li><hr>
+						<li>1/2 cebolla</li><hr>
+						<li>Siete dientes de ajos sin pelar</li><hr>
+						<li>2 tomates</li><hr>
+						<li>1 pimiento</li><hr>
+						<li>1 hoja de laurel</li><hr>
+						<li>1 cucharada de pimentón de la Vera</li><hr>
+						<li>1 trozo de tocino</li><hr>
+						<li>Chorizo y Morcilla</li><hr>
+						<li>Avecrem</li><hr>
+						<li>Aceite</li><hr>
+						<li>Sal</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Ponemos todos los ingredientes en la olla menos la morcilla y el chorizo  y cocemos durante unos 20’.</li><br>
+						<li>Pasado este tiempo, abrir la olla y añadir un chorreón de tomate frito.Se le da un hervor, se añade el chorizo y la morcilla y se tiene unos 5 minutos para que suelten el sabor.</li><br>
+						<li>Se sirve caliente.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador9").click(function(){
+								console.log("click")
+								
+							$("#PotajeGarbanzos").slideToggle(2000)
+						});
+						});
+					</script>
+
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador10">Patatas con Mejillones</h2>
+					<div class="Descripcion" id="PapasMejillones">
+					<ul class="Ingredientes">
+						<li>1 kg de patatas 3/4 de mejillones</li><hr>
+						<li>1 cebolla</li><hr>
+						<li>3 dientes de ajo</li><hr>
+						<li>2 hojas de laurel</li><hr>
+						<li>1/2 guindilla</li><hr>
+						<li>Vino blanco</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se sofríe la cebolla con el ajo.</li><br>
+						<li>Se marean las patatas en rodajas gordas.</li><br>
+						<li>Se le echa el vino y el laurel y cuando las patatas estén casi tiernas se le echa el pimentón, perejil, guindilla y los mejillones( limpios).</li><br>
+						<li>Se tapa y se deja cocer.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador10").click(function(){
+								console.log("click")
+								
+							$("#PapasMejillones").slideToggle(2000)
+						});
+						});
+					</script>
+
+				</div>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador11">Sopa</h2>
+					<div class="Descripcion" id="Sopa">
+					<ul class="Ingredientes">
+						<li>1 cuarto trasero de pollo</li><hr>
+						<li>1 hueso de jamón</li><hr>
+						<li>4 o 5 zanahorias</li><hr>
+						<li>1 o 2 puerros</li><hr>
+						<li>Avecrem</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se pone todo en la olla a presión con agua y se tiene una media hora o más.</li><br>
+						<li>Pasado este tiempo abrir la olla y añadir fideos.</li><br>
+						<li>Es mejor cocer los fideos en una cacerola aparte con un poco de la sopa.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador11").click(function(){
+								console.log("click")
+								
+							$("#Sopa").slideToggle(2000)
+						});
+						});
+					</script>
+
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador12">Paella</h2>
+					<div class="Descripcion" id="Paella">
+					<ul class="Ingredientes">
+						<li>2 Tomates</li><hr>
+						<li>5 pimientos pequeños</li><hr>
+						<li>Dos dientes de ajo</li><hr>
+						<li>1/2 cebolla</li><hr>
+						<li>Pollo troceado</li><hr>
+						<li>Laurel</li><hr>
+						<li>Pimentón</li><hr>
+						<li>Azafrán</li><hr>
+						<li>Arroz</li><hr>
+						<li>Un vaso de vino</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Sofreímos la verdura, ajo, cebolla, pimiento y tomate previamente troceado.</li><br>
+						<li>Se apartan los ajos y se majan en el mortero con sal.</li><br>
+						<li>Dorar el pollo con el sofrito y añadir vino y una hoja de laurel.</li><br>
+						<li>Pasar todo a la olla junto con el ajo del mortero y agua.</li><br>
+						<li>Se tiene unos 20’ en la olla.</li><br>
+						<li>En una paellera se vierte el contenido de la olla y se añade el arroz, rectificando de sal, vino, pimentón, chorizo…</li><br>
+						<li>Dejar reposar unos 5’ y servir.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador12").click(function(){
+								console.log("click")
+								
+							$("#Paella").slideToggle(2000)
+						});
+						});
+					</script>
+
+				</div>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador13">Arroz Blanco</h2>
+					<div class="Descripcion" id="ArrozBlanco">
+					<ul class="Ingredientes">
+						<li>Dos puñados de arroz por persona</li><hr>
+						<li>Dos o tres dientes de ajo</li><hr>
+						<li>Avecrem</li><hr>
+						<li>Sal</li><hr>
+						<li>Aceite</li><hr>
+						<li>Agua</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>En una sartén dorar los dientes de ajo con un poco de aceite en el fondo.</li><br>
+						<li>Añadir el arroz y sofreir unos segundos.</li><br>
+						<li>Cubrir con agua y desmenuzar una pastilla de avecrem.</li><br>
+						<li>Cuando el agua se consuma añadir más e ir rectificando de agua y sal hasta que el arroz esté al gusto.</li><br>
+						<li>Servir sólo o con tomate frito. Se puede acompañar de un huevo frito, salchichas...</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador13").click(function(){
+								console.log("click")
+								
+							$("#ArrozBlanco").slideToggle(2000)
+						});
+						});
+					</script>
+
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador14">Pisto</h2>
+					<div class="Descripcion" id="Pisto">
+					<ul class="Ingredientes">
+						<li>2 calabacines</li><hr>
+						<li>2 berenjenas</li><hr>
+						<li>1 cebolla</li><hr>
+						<li>4 pimientos verdes</li><hr>
+						<li>4 o 5 tomates</li><hr>
+						<li>Tomate frito</li><hr>
+						<li>Aceite</li><hr>
+						<li>Sal</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Pelar y trocear la verdura.</li><br>
+						<li>Freír  cada cosa por separado.</li><br>
+						<li>En una sartén la cebolla, el pimiento y el tomate y en otra el calabacín y la berenjena.</li><br>
+						<li>Se van poniendo en un escurridor para eliminar el aceite.</li><br>
+						<li>Poner todo en una cacerola y añadir un buen chorreón de tomate Orlando y avecrem.</li><br>
+						<li>Hervir un rato y servir con patatas fritas y un huevo frito.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador14").click(function(){
+								console.log("click")
+								
+							$("#Pisto").slideToggle(2000)
+						});
+						});
+					</script>
+				</div>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador15">Bouillabaisse Abuela Carmen</h2>
+					<div class="Descripcion" id="Bouillabaisse">
+					<ul class="Ingredientes">
+						<li>Rape o pescada</li><hr>
+						<li>1/4 almejas</li><hr>
+						<li>1/4 gambas</li><hr>
+						<li>Un puñado de almendras crudas</li><hr>
+						<li>Cebolla</li><hr>
+						<li>Tomate</li><hr>
+						<li>Pimiento</li><hr>
+						<li>Ajo</li><hr>
+						<li>Patata</li><hr>
+						<li>Zanahoria</li><hr>
+						<li>Una rama de perejil</li><hr>
+						<li>Dos pastillas de avecrem</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Cocemos el pescado y dos pastillas de avecrem, la cebolla cortada en cascos y la patata troceada, el pimiento, el tomate y la zanahoria con un chorreón de aceite.</li><br>
+						<li>Cuando el pescado esté tierno se aparta y se saca el pescado a un plato para limpiarlo y desmenuzar.</li><br>
+						<li>Se pasa toda la verdura y se cuela por un chino y el caldo que queda se cuela también.</li><br>
+						<li>CSe mezcla todo y se pone a hervir.</li><br>
+						<li>Las almendras se cuecen solas hasta que estén tiernas se baten y se añaden a la sopa ya colada.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador15").click(function(){
+								console.log("click")
+								
+							$("#Bouillabaisse").slideToggle(2000)
+						});
+						});
+					</script>
+				</div>
+				<div class="Receta" id="Vacio"></div>
+			</div>
+
+
+		</section>
+
+	</body>
+</html>

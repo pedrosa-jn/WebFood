@@ -1,0 +1,383 @@
+*{box-sizing: border-box; margin: 0;}
+
+a{text-decoration: none;}
+
+	/* ----------------------/*Navegador Barra----------------*/
+		nav.Navegador{
+			height: 60px; 
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #1b1e2f61;
+			color: white;
+			font-family: 'Unica One', cursive;
+		    position: fixed;
+		    top: 0;
+		    z-index: 10;
+		    width: 100%;
+		    visibility: hidden;
+
+			}
+			nav.Navegador ul{
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+				display: flex;
+			}
+			nav.Navegador ul li{
+				display: inline;
+				padding: 0 35px;
+				}
+				li{
+					font-size: 20px; 
+				}
+				li>a>img{
+					margin-bottom: -11px;
+				}
+			nav.Navegador ul li a{
+				text-decoration: none;
+				color: white;
+			}
+
+		/*------------Icono Menu Mobile-----------*/
+			.Menu{
+				width: 60px;
+				height: 50px;
+				visibility: hidden;
+			    position: absolute;
+	    		right: 25px;
+	    		top: 25px;
+				}
+				#barra1{
+					background-color: #ffffff00;
+					width: 100%;
+					height: 7px;
+					border-radius: 3px;
+					transform-origin: left;
+					
+				}
+					#barra2{
+					background-color: #ffffff00;
+					width: 100%;
+					height: 7px;
+					border-radius: 3px;
+					margin: 24% 0;
+				}
+					#barra3{
+					background-color: #ffffff00;
+					width: 100%;
+					height: 7px;
+					border-radius: 3px;
+					transform-origin: left;
+
+				}
+				body.Abierto{overflow-y: hidden;}
+				nav.Navegador ul.Abierto{overflow-y: scroll;height: 100%;}
+				.Menu.Abierto{
+					position: fixed;
+				}
+				.Menu.Abierto #barra1{
+					transform: rotate(45deg);
+				}
+				.Menu.Abierto #barra2{
+					background-color: #00000000;
+					width: 0;
+				}
+				.Menu.Abierto #barra3{
+					transform: rotate(-45deg);
+				}
+
+	.Transitions{
+		transition-property: all;
+		transition-duration: 1s;
+		transition-delay: .3s;
+		backface-visibility: hidden;
+	}
+
+	header{
+		height: 100vh; width: 100vw;
+		overflow: hidden;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		}
+			header video{
+			position: absolute;
+			width: 125%;
+			}
+			header #velo{
+			height: 100%;
+			width: 100%;
+			background-color: #33332e85;
+			position: absolute;
+			top: 0;
+			}
+			header div.TextosHeader{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				color: white;
+				text-align: center; 	
+				z-index: 10;
+				}
+				.TextosHeader h1{
+				font-family: 'Unica One', cursive;
+				font-size: 90px;
+				}
+			header .mouse{position: absolute; bottom: 25px;}
+				.mouse #raton{
+				height: 50px;
+				width: 25px;
+				border-radius: 25px;
+				border: 1px solid white;
+				}
+				.mouse #raton #scroll{
+				margin: 8px auto;
+				height: 10px;
+				width: 10px;
+				border-radius: 5px;
+				background-color: white;
+				}
+		.AnimateScroll{
+			animation-name: Scroll;
+			animation-duration: 1s;
+			animation-delay: .5s;
+			animation-fill-mode: both;
+			animation-direction: alternate;
+			animation-iteration-count: infinite;
+			}
+			@keyframes Scroll{
+				0%{margin: 8px auto;}
+				100%{margin: 30px auto; opacity: 0;}
+			}
+
+	section.Categorias{
+		height: 225vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+
+		}
+		.Fila{
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			align-items: center;
+			}
+		.Caja{
+			height: 370px;
+			width: 275px;
+			border-radius: 10px;
+			background-color: #33332e85;
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+			box-shadow: 0px 0px 20px 0px #00000075;
+			overflow: hidden;
+			}
+			.Caja .velo{
+			height: 100%;
+			width: 100%;
+			background-color: #33332e85;
+			border-radius: 10px;
+			}			
+			.Fila #salsas{
+				background-image: url(../Img/Salsas.jpg);
+				background-position: center;
+				background-size: cover;
+				}
+				#salsas:hover img.Pre{bottom: -185px;}
+				#salsas:hover .Pos{top: 0px;}
+			.Fila #ensaladas{
+				background-image: url(../Img/Ensalada.jpg);
+				background-position: center;
+				background-size: cover;
+				}
+				#ensaladas:hover img.Pre{bottom: -185px;}
+				#ensaladas:hover .Pos{top: 0px;}				
+			.Fila #guisos{
+				background-image: url(../Img/Guiso.jpg);
+				background-position: bottom;
+				background-size: cover;
+				}
+				#guisos:hover img.Pre{bottom: -185px;}
+				#guisos:hover .Pos{top: 0px;}
+			.Fila #pastas{
+				background-image: url(../Img/Pasta.jpg);
+				background-position: center;
+				background-size: cover;
+				}
+				#pastas:hover img.Pre{bottom: -185px;}
+				#pastas:hover .Pos{top: 0px;}
+			.Fila #carnes{
+				background-image: url(../Img/Carne.jpg);
+				background-position: center;
+				background-size: cover;
+				}
+				#carnes:hover img.Pre{bottom: -185px;}
+				#carnes:hover .Pos{top: 0px;}
+			.Fila #pollos{
+				background-image: url(../Img/Pollo.jpg);
+				background-position: center;
+				background-size: cover;
+				}
+				#pollos:hover img.Pre{bottom: -185px;}
+				#pollos:hover .Pos{top: 0px;}													
+			.Fila #pescados{
+				background-image: url(../Img/Pescado.jpg);
+				background-position: center;
+				background-size: cover;
+				}
+				#pescados:hover img.Pre{bottom: -185px;}
+				#pescados:hover .Pos{top: 0px;}
+			.Fila #otros{
+				background-image: url(../Img/Otro.jpg);
+				background-position: center;
+				background-size: cover;
+				}
+				#otros:hover img.Pre{bottom: -185px;}
+				#otros:hover .Pos{top: 0px;}
+			.Fila #postres{
+				background-image: url(../Img/Postre.jpg);
+				background-position: center;
+				background-size: cover;
+				}
+				#postres:hover img.Pre{bottom: -185px;}
+				#postres:hover .Pos{top: 0px;}
+			
+			.Fila img.Pre{position: absolute; bottom: 0; left: 0; width: 275px;}
+			
+			.Fila .Pos{
+				height: 100%;
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				align-items: center;
+				position: absolute;
+				top: -305px;
+				}
+				.Pos img{width: 125px;}
+				.Pos .SaberMas{
+				height: 45px;
+				width: 160px;
+				border-radius: 8px;
+				background-color: #ea3949;
+				display: flex; justify-content: center; align-items: center;
+					}
+					.Pos .SaberMas h4{
+						color: white;
+						font-family: 'Unica One', cursive;
+						font-size: 20px;
+					}
+
+		.Transitions{
+			transition-property: all;
+			transition-delay: .3s;
+			transition-duration: 1s;
+		}
+
+	footer{
+		position: relative;
+		height: 35vh;
+		width: 100%;
+		background-color: #1d1d1b;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+		}
+		footer video{
+			width: 100%;
+			position: absolute;
+			bottom: -340px;
+		}
+		footer #velo{
+			height: 100%;
+			width: 100%;
+			background-color: #3f385673;
+			z-index: 10;
+		}
+		footer img{
+			position: absolute;
+			width: 25%;
+		}
+	
+	/*Media Querys Mobile: Width < 576px*/
+		@media screen and (max-width: 576px){
+		nav.Navegador{
+			align-items: flex-start;
+			background: 0;
+			position: absolute;
+			top: 0px;
+			width: 100%;
+			visibility: visible;
+		    }
+		    nav.Navegador ul{
+		    	display: none;
+				flex-direction: column;
+				line-height: 4;
+				color: white;
+				width: 100%;
+			    padding-top: 30%;
+		    	padding-bottom: 20%;
+		    	background-color: #7ab9abe0;	
+		    	position: fixed;
+		    	z-index: 10;
+		    }
+			nav.Navegador ul li{
+			    text-align: center;
+		    	font-size: 30px;
+		    	display: block;
+		    	border: 0;
+		    	margin-bottom: 25px;
+				}
+				.Navegador li a+hr{margin-bottom: 25px;border-color:white;}
+				.Navegador li>hr{margin-bottom: 0;}
+			nav.Navegador .EnlaceMenu{
+				display: flex;
+				flex-direction: row;
+				justify-content: flex-start;
+				align-items: center;
+				}
+				.EnlaceMenu img{width: 100px; margin-right: 20px;}
+			.Menu{
+				visibility: visible;
+				position: fixed;
+				z-index: 10;
+				}
+
+				#barra1{
+					background-color: white;
+					box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+				}
+				#barra2{
+					background-color: white;
+					box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+				}
+				#barra3{
+					background-color: white;
+					box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+					}
+		header video{width: auto;}
+		header div.TextosHeader{z-index: 1;}
+
+		section.Categorias{height: 100%;}
+			.Categorias .Fila{flex-direction: column;}
+			.Fila .Caja{margin-bottom: 45px;}
+			.Caja#salsas{margin-top: 45px;}
+
+		footer video{
+			width: 340%;
+			bottom: -275px;
+		}
+		footer #velo{z-index: 1;}
+
+
+

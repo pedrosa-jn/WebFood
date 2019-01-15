@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pasta</title>
+		<link rel="shortcut icon" href="./Img/IconPasta.png">
+		<link rel="stylesheet" type="text/css" href="./css/Estilos.css">
+		<link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	</head>
+	<body>
+
+		<nav class="Navegador">
+			<ul>
+				<li><hr><a class="EnlaceMenu" id="Home" href="../index.html">Home</a><hr></li>
+				<li><a class="EnlaceMenu" href="../Salsas/salsas.html"><img src="../Img/IconSalsa.png">Salsas</a></li>
+				<li><a class="EnlaceMenu" href="../Ensaladas/ensaladas.html"><img src="../Img/IconEnsalada.png">Ensaladas</a></li>
+				<li><a class="EnlaceMenu" href="../Guisos/guisos.html"><img src="../Img/IconGuiso.png">Pasta</a></li>
+				<li><a class="EnlaceMenu" href="../Ensaladas/ensaladas/Mobile.html"><img src="../Img/IconCarne.png">Carne</a></li>
+				<li><a class="EnlaceMenu" href="../Ensaladas/ensaladas/Mobile.html"><img src="../Img/IconPollo.png">Pollo</a></li>
+				<li><a class="EnlaceMenu" href="../Ensaladas/ensaladas/Mobile.html"><img src="../Img/IconPescado.png">Pesccado</a></li>
+				<li><a class="EnlaceMenu" href="../Ensaladas/ensaladas/Mobile.html"><img src="../Img/IconOtros.png">Otros</a></li>
+				<li><a class="EnlaceMenu" href="../Ensaladas/ensaladas/Mobile.html"><img src="../Img/IconPostre.png">Postres</a></li>
+			</ul>
+			<div class="Menu Transitions">
+					<div class="Transitions" id="barra1"></div>
+					<div class="Transitions" id="barra2"></div>
+					<div class="Transitions" id="barra3"></div>
+			</div>
+
+			<script type="text/javascript">
+				$ (function(){
+					$(".Menu").click(function(){
+						console.log("click")
+						
+					$("nav.Navegador ul").slideToggle(2000)
+					$(".Menu,body,ul").toggleClass("Abierto")
+				});
+				});
+			</script>
+		</nav>
+
+		<section><div id="Velo"></div>
+			
+			<div id="Titulo">
+				<a href="../index.html"><div id="back"><</div></a>
+				<img src="./Img/IconPasta.png">
+				<h3>
+					<span>Pasta</span>
+		    	</h3>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador1">Espaguetis Carbonara</h2>
+					<div class="Descripcion" id="Carbonara">
+					<ul class="Ingredientes">
+						<li>Medio paquete de espaguetis</li><hr>
+						<li>Bacon</li><hr>
+						<li>1 huevo por persona</li><hr>
+						<li>1 paquete de queso rallado</li><hr>
+						<li>Aceite y Sal</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se cuecen los espaguetis en abundante agua con sal durante unos 8-10 minutos.</li><br>
+						<li>Pasado este tiempo, se cuela la pasta y se reserva.</li><br>
+						<li>En una sartén se fríe el bacon troceado.</li><br>
+						<li>Se mezcla con la pasta bien.</li><br>
+						<li>En un bol se baten los huevos, se salan y se añade el queso rallado.</li><br>
+						<li>Se mezcla todo bien y se añade a los espaguetis calientes pero fuera del fuego.</li><br>
+						<li>Se puede añadir un poquito de pimienta.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador1").click(function(){
+								console.log("click")
+								
+							$("#Carbonara").slideToggle(2000)
+						});
+						});
+					</script>	
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador2">Espaguetis con Cebolla y Jamón</h2>
+					<div class="Descripcion" id="CebollaJamon">
+					<ul class="Ingredientes">
+						<li>Medio paquete de espaguetis</li><hr>
+						<li>1 cebolla</li><hr>
+						<li>Jamón serrano troceado</li><hr>
+						<li>Aceite y Sal</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se cuecen los espaguetis en abundante agua con sal durante unos 8-10 minutos.</li><br>
+						<li>Pasado este tiempo, se cuela la pasta y se reserva.</li><br>
+						<li>En una sartén se fríe la cebolla bien picada y una vez dorada se añade el jamón.</li><br>
+						<li>Se dora todo junto unos minutos y luego añadimos la pasta a la sartén.</li><br>
+						<li>Mantenemos en el fuego unos minutos y removemos bien.</li>
+					</ul>
+					</div>
+				
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador2").click(function(){
+								console.log("click")
+								
+							$("#CebollaJamon").slideToggle(2000)
+						});
+						});
+					</script>
+				</div>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador3">Macarrones con Tomate y Chorizo</h2>
+					<div class="Descripcion" id="MacarronesChorizo">
+					<ul class="Ingredientes">
+						<li>Medio paquete de espaguetis</li><hr>
+						<li>1 cebolla</li><hr>
+						<li>1 pimiento</li><hr>
+						<li>Chorizo</li><hr>
+						<li>Tomate Frito</li><hr>
+						<li>Queso rallado</li><hr>
+						<li>Aceite y Sal</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se cuecen los macarrones en abundante agua con sal durante unos 8-10 minutos.</li><br>
+						<li>Pasado este tiempo, se cuela la pasta y se reserva.</li><br>
+						<li>Picamos la cebolla y el pimiento.</li><br>
+						<li>En una sartén se fríe la cebolla y una vez dorada se añade el pimiento.</li><br>
+						<li>Se dora todo junto unos minutos y luego añadimos el tomate frito.</li><br>
+						<li>Mantenemos en el fuego, removemos bien y añadimos un chorrito de vino y el chorizo troceado unos 10 minutos.</li><br>
+						<li>En una fuente de horno ponemos la pasta y el tomate y cubrimos con queso rallado.</li><br>
+						<li>Precalentamos el horno y gratinamos la pasta.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador3").click(function(){
+								console.log("click")
+								
+							$("#MacarronesChorizo").slideToggle(2000)
+						});
+						});
+					</script>	
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador4">Espaguetis con Ajo y Aceite</h2>
+					<div class="Descripcion" id="AjoAceite">
+					<ul class="Ingredientes">
+						<li>Medio paquete de espaguetis</li><hr>
+						<li>4 ó 5 dientes de ajo</li><hr>
+						<li>Aceite y Sal</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se cuece la pasta en abundante agua con sal durante unos 8-10 minutos.</li><br>
+						<li>Pasado este tiempo, se cuela la pasta y se reserva.</li><br>
+						<li>Pelamos los dientes de ajos y picamos.</li><br>
+						<li>En una sartén se fríen los dientes de ajo.</li><br>
+						<li>Se mezcla la pasta con los ajos en la sartén.</li><br>
+						<li>Mantenemos en el fuego unos cinco minutos.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador4").click(function(){
+								console.log("click")
+								
+							$("#AjoAceite").slideToggle(2000)
+						});
+						});
+					</script>
+				</div>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador5">Espaguetis Bolognesa</h2>
+					<div class="Descripcion" id="Bolognesa">
+					<ul class="Ingredientes">
+						<li>Medio paquete de espaguetis</li><hr>
+						<li>1/2 kg de carne picada</li><hr>
+						<li>1/2 cebolla</li><hr>
+						<li>1 pimiento</li><hr>
+						<li>1 diente de ajo</li><hr>
+						<li>Tomate frito</li><hr>
+						<li>Queso rallado</li><hr>
+						<li>Aceite y Sal</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se cuece la pasta en abundante agua con sal durante unos 8-10 minutos.</li><br>
+						<li>Pasado este tiempo, se cuela la pasta y se reserva.</li><br>
+						<li>Picamos la cebolla y el pimiento.</li><br>
+						<li>En una sartén se fríe la cebolla y una vez dorada se añade el pimiento.</li><br>
+						<li>En un bol ponemos la carne picada y  la salamos.</li><br>
+						<li>Una vez dorada la cebolla añadimos la carne picada y cuando deje de estar cruda añadimos un chorreón de vino.</li><br>
+						<li>Se dora todo junto unos minutos y luego añadimos el tomate frito.</li><br>
+						<li>Mantenemos en el fuego y removemos bien.</li><br>
+						<li>En una fuente ponemos la pasta y el tomate y cubrimos con queso rallado.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador5").click(function(){
+								console.log("click")
+								
+							$("#Bolognesa").slideToggle(2000)
+						});
+						});
+					</script>
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador6">Espaguetis con Gambas y Ajo</h2>
+					<div class="Descripcion" id="GambasAjo">
+					<ul class="Ingredientes">
+						<li>Medio paquete de espaguetis</li><hr>
+						<li>300 grs de gambas frescas</li><hr>
+						<li>3 ó 4 dientes de ajo</li><hr>
+						<li>Aceite y Sal</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se cuecen las gambas en agua con sal 10 minutos.</li><br>
+						<li>Una vez cocidas se sacan y se cuela el agua.</li><br>
+						<li>En ese agua se cuecen los espaguetis.</li><br>
+						<li>Se sacan del agua cuando estén.</li><br>
+						<li>En una sartén  con un poco de aceite se doran los dientes de ajo.</li><br>
+						<li>Se añaden las gambas a la sartén y se marean un poco.</li><br>
+						<li>Se añaden los espaguetis y se marea todo junto un poco.</li><br>
+						<li>Están listos para servir.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador6").click(function(){
+								console.log("click")
+								
+							$("#GambasAjo").slideToggle(2000)
+						});
+						});
+					</script>
+
+				</div>	
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador7">Ensalada de Pasta</h2>
+					<div class="Descripcion" id="EnsaladaPasta">
+					<ul class="Ingredientes">
+						<li>Pasta</li><hr>
+						<li>Tomate natural</li><hr>
+						<li>Queso feta o fresco, en daditos</li><hr>
+						<li>Embutido: jamón york, pavo, mortadela, jamón serrano… troceado</li><hr>
+						<li>Sal, aceite y vinagre</li><hr>
+						<li>Rúcula (opcional)</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se cuece la pasta en agua hirviendo con sal y un chorreón de aceite durante unos 8 minutos.</li><br>
+						<li>Se escurre bien del agua y se pone en una fuente.</li><br>
+						<li>Se lava bien el tomate y se trocea.</li><br>
+						<li>Se trocea el embutido.</li><br>
+						<li>Se añade el queso.</li><br>
+						<li>Se pone todo en la fuente y se aliña con sal, vinagre y aceite en este orden.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador7").click(function(){
+								console.log("click")
+								
+							$("#EnsaladaPasta").slideToggle(2000)
+						});
+						});
+					</script>
+
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador8">Ensalada de Pasta con Gambas</h2>
+					<div class="Descripcion" id="EnsaladaGambas">
+					<ul class="Ingredientes">
+						<li>Pasta</li><hr>
+						<li>Mayonesa</li><hr>
+						<li>Gambas cocidas</li><hr>
+						<li>Media lata de maíz</li><hr>
+						<li>Aceite y Sal</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se cuece la pasta en agua hirviendo con sal y un chorreón de aceite durante unos 8 minutos.</li><br>
+						<li>Se escurre bien del agua y se pone en una fuente. Lo rociamos con un poco de aceite.</li><br>
+						<li>Se añade el maíz, las gambas y la mayonesa y se revuelve bien.</li><br>
+						<li>Se mete en la nevera y se deja enfriar.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador8").click(function(){
+								console.log("click")
+								
+							$("#EnsaladaGambas").slideToggle(2000)
+						});
+						});
+					</script>
+
+				</div>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador9">Fideos Amarillos</h2>
+					<div class="Descripcion" id="FideosAmarillos">
+					<ul class="Ingredientes">
+						<li>Espaguetis</li><hr>
+						<li>1/4 de chirlas</li><hr>
+						<li>1/4 de calamares</li><hr>
+						<li>1/4 de gambas arroceras</li><hr>
+						<li>2 dientes de ajo</li><hr>
+						<li>3 o 4 tomates</li><hr>
+						<li>1 pimiento verde</li><hr>
+						<li>1/2 cebolla</li><hr>
+						<li>Azafrán</li><hr>
+						<li>1 cucharada de Pimentón de la Vera</li><hr>
+						<li>Aceite y Sal</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se cuecen las chirlas, gambas y calamares todo junto con sal durante unos 10’.</li><br>
+						<li>Se hace un sofrito con el ajo,la cebolla, pimiento y tomates y se pasa por el chino.</li><br>
+						<li>Se cuela el agua de cocer las gambas, chirlas y calamares y se reserva.</li><br>
+						<li>Se pelan las gambas, chirlas y calamares y se reservan también.Algunas de las cabezas de gambas se sofríen un poco con aceite y se pasan por la minipimer con un poco de caldo y vino.</li><br>
+						<li>Se añade el sofrito al agua previamente colada y se cuece todo junto con medio vaso de vino blanco, el laurel, pimentón y el avecrem. Se mete en la olla unos veinte minutos.</li><br>
+						<li>Añadimos las gambas, chirlas y calamares y cocemos un rato.</li><br>
+						<li>Cuando haya hervido un poco y justo antes de comer cocer los espaguetis en ese caldo.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador9").click(function(){
+								console.log("click")
+								
+							$("#FideosAmarillos").slideToggle(2000)
+						});
+						});
+					</script>
+
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador10">Lasagna</h2>
+					<div class="Descripcion" id="Lasagna">
+					<ul class="Ingredientes">
+						<li>6 Placas de lasaña</li><hr>
+						<li>Carne picada 3/4 o 1 kg</li><hr>
+						<li>Tomate triturado natural</li><hr>
+						<li>Tomate frito</li><hr>
+						<li>Bechamel</li><hr>
+						<li>Cebolla</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se ponen las placas en remojo mientras se cocinan el resto de los ingredientes.</li><br>
+						<li>Se pica la cebolla finita y se dora.</li><br>
+						<li>Se salpimenta la carne y se añade al sofrito. Se sofrie un ratito hasta que la carne esté hecha.</li><br>
+						<li>Se añade el tomate triturado y cuatro cucharadas de tomate frito</li><br>
+						<li>Se sofríe un poquito todo junto durante unos 10 minutos.</li><br>
+						<li>Se sacan las placas del remojo y se secan.</li><br>
+						<li>Se cubre el fondo de una fuente con una capa de pasta otra de carne, otra de pasta y otra de carne y se cubre con una capa final de pasta.</li><br>
+						<li>Se cubre con bechamel( se puede hacer o comprar hecha).</li><br>
+						<li>Se le pone queso rallado por encima y se mete en el horno hasta que se gratine.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador10").click(function(){
+								console.log("click")
+								
+							$("#Lasagna").slideToggle(2000)
+						});
+						});
+					</script>
+
+				</div>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador11">Canelones Abuela Carmen</h2>
+					<div class="Descripcion" id="CanelonesAbCarmen">
+					<ul class="Ingredientes">
+						<li>1\2 kg carne picada ternera</li><hr>
+						<li>1 bote de paté ibérico</li><hr>
+						<li>Ajo, sal y pimienta</li><hr>
+						<li>Tomate frito (opcional)</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se dora la carne aliñada con sal ajo y pimienta, no mucho.</li><br>
+						<li>Se añade fuera del fuego el paté y se remueve bien.</li><br>
+						<li>Se cuecen los canelones y se rellenan con la mezcla.( se puede añadir un poquito de tomate para que quede más jugoso).</li><br>
+						<li>Se cubre una fuente con un poquito de tomate( esto es opcional) y se van poniendo los canelones.</li><br>
+						<li>Se hace una bechamel y se le echa por encima a los canelones con queso rallado y se gratina</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador11").click(function(){
+								console.log("click")
+								
+							$("#CanelonesAbCarmen").slideToggle(2000)
+						});
+						});
+					</script>
+
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador12">Canelones Abuela Cheli</h2>
+					<div class="Descripcion" id="CanelonesAbCheli">
+					<ul class="Ingredientes">
+						<li>1/4 de Carne picada</li><hr>
+						<li>1/2 Cebolla</li><hr>
+						<li>Tomate frito</li><hr>
+						<li>Canelones</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se adereza la carne con un poco de sal.</li><br>
+						<li>En una sartén con un poco de aceite se dora la cebolla.</li><br>
+						<li>Se añade la carne picada  y se le echa un poquito de tomate. Se marea durante unos minutos hasta que la carne esté hecha.</li><br>
+						<li>En una cacerola se cuecen los canelones según las indicaciones del envase.</li><br>
+						<li>Una vez cocidos y secos los canelones se extienden en un paño limpio y se van rellenando con la masa y enrollando.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador12").click(function(){
+								console.log("click")
+								
+							$("#CanelonesAbCheli").slideToggle(2000)
+						});
+						});
+					</script>
+
+				</div>
+			</div>
+
+
+		</section>
+
+	</body>
+</html>

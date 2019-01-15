@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Salsas</title>
+		<link rel="shortcut icon" href="./Img/IconEnsalada.png"/>
+		<link rel="stylesheet" type="text/css" href="./css/Estilos.css">
+		<link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	</head>
+	<body>
+
+		<nav class="Navegador">
+			<ul>
+				<li><hr><a class="EnlaceMenu" id="Home" href="../index.html">Home</a><hr></li>
+				<li><a class="EnlaceMenu" href="../Salsas/salsas.html"><img src="../Img/IconSalsa.png">Salsas</a></li>
+				<li><a class="EnlaceMenu" href="../Guisos/guisos.html"><img src="../Img/IconGuiso.png">Guisos</a></li>
+				<li><a class="EnlaceMenu" href="../Ensaladas/ensaladas/Mobile.html"><img src="../Img/IconPasta.png">Pasta</a></li>
+				<li><a class="EnlaceMenu" href="../Ensaladas/ensaladas/Mobile.html"><img src="../Img/IconCarne.png">Carne</a></li>
+				<li><a class="EnlaceMenu" href="../Ensaladas/ensaladas/Mobile.html"><img src="../Img/IconPollo.png">Pollo</a></li>
+				<li><a class="EnlaceMenu" href="../Ensaladas/ensaladas/Mobile.html"><img src="../Img/IconPescado.png">Pesccado</a></li>
+				<li><a class="EnlaceMenu" href="../Ensaladas/ensaladas/Mobile.html"><img src="../Img/IconOtros.png">Otros</a></li>
+				<li><a class="EnlaceMenu" href="../Ensaladas/ensaladas/Mobile.html"><img src="../Img/IconPostre.png">Postres</a></li>
+			</ul>
+			<div class="Menu Transitions">
+					<div class="Transitions" id="barra1"></div>
+					<div class="Transitions" id="barra2"></div>
+					<div class="Transitions" id="barra3"></div>
+			</div>
+
+			<script type="text/javascript">
+				$ (function(){
+					$(".Menu").click(function(){
+						console.log("click")
+						
+					$("nav.Navegador ul").slideToggle(2000)
+					$(".Menu,body,ul").toggleClass("Abierto")
+				});
+				});
+			</script>
+		</nav>
+
+		<section><div id="Velo"></div>
+			
+			<div id="Titulo">
+				<a href="../index.html"><div id="back"><</div></a>
+				<img src="./Img/IconEnsalada.png">
+				<h3>
+					<span>Ensaladas</span>
+		    		<span>y Platos Fríos</span>
+		    	</h3>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador1">Salmorejo Abuelo Mariano</h2>
+					<div class="Descripcion" id="SalmorejoAbuelo">
+					<ul class="Ingredientes">
+						<li>6 - 8 tomates maduros</li><hr>
+						<li>1 pimiento verde</li><hr>
+						<li>1 diente de ajo</li><hr>
+						<li>Un trozo de pan mojado o media barra empapada y escurrida del agua</li><hr>
+						<li>Sal</li><hr>
+						<li>Aceite</li><hr>
+						<li>Vinagre (el abuelo no le echa vinagre)</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se escaldan los tomates y se pelan.</li><br>
+						<li>En el vaso de la batidora se echan los tomates troceados, el pimiento limpio y sin semillas, el diente de ajo y el trozo de pan mojado.</li><br>
+						<li>Se bate todo bien y se va añadiendo poco a poco el aceite.</li><br>
+						<li>Cuando está bien trabado se añade (el vinagre) y la sal y agua al gusto.</li><br>
+						<li>Se cuela bien todo y se añade jamón picado, huevo duro.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador1").click(function(){
+								console.log("click")
+								
+							$("#SalmorejoAbuelo").slideToggle(2000)
+						});
+						});
+					</script>
+
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador2">Ajo Blanco</h2>
+					<div class="Descripcion" id="AjoBlanco">
+					<ul class="Ingredientes">
+						<li>Un puñado de almendras blanca</li><hr>
+						<li>1 diente de ajo</li><hr>
+						<li>Un trozo de pan mojado</li><hr>
+						<li>Aceite, sal y vinagre</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>En el vaso de la batidora se ponen todos los ingredientes y se baten bien. Se añade agua al gusto.</li><br>
+						<li>Se sirve muy frío con trocitos de manzana y uvas.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador2").click(function(){
+								console.log("click")
+								
+							$("#AjoBlanco").slideToggle(2000)
+						});
+						});
+					</script>
+
+				</div>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador3">Ensaladilla Rusa</h2>
+					<div class="Descripcion" id="EnsaladillaRusa">
+					<ul class="Ingredientes">
+						<li>Un kilo de patatas</li><hr>
+						<li>Dos huevos cocidos</li><hr>
+						<li>Dos latas de atún</li><hr>
+						<li>Una lata de pimientos rojos</li><hr>
+						<li>Aceitunas</li><hr>
+						<li>Mayonesa</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>En la olla a presión se ponen a cocer las patatas con su piel en agua con sal durante 10 minutos.</li><br>
+						<li>Una vez cocidas, se dejan enfriar, se pelan y se trocean o aplastan al gusto.</li><br>
+						<li>Añadimos el atún en aceite de oliva con el aceite, un huevo picado, pimientos troceados con un poquito del aceite en el que están envasados y algunas aceitunas.</li><br>
+						<li>Se mezcla todo con la mayonesa y se decora con algunos pimientos, aceitunas y huevo rallado.</li><br>
+						<li>Enfriar en la nevera</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador3").click(function(){
+								console.log("click")
+								
+							$("#EnsaladillaRusa").slideToggle(2000)
+						});
+						});
+					</script>
+
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador4">Mousse de Espárragos</h2>
+					<div class="Descripcion" id="MousseEsparragos">
+					<ul class="Ingredientes">
+						<li>8 huevos</li><hr>
+						<li>2 latas de leche ideal</li><hr>
+						<li>1 bote de espárragos blancos</li><hr>
+						<li>Queso rallado</li><hr>
+						<li>Sal y pimienta</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Poner los ingredientes en la batidora y batir.</li><br>
+						<li>Cubrir un molde con mantequilla y verter la mezcla dentro.</li><br>
+						<li>Poner al baño maría en una cacerola con agua hirviendo.</li><br>
+						<li>Meter en el horno hasta que se cuaje todo bien.</li><br>
+						<li>Servir frío y cubrir con mayonesa.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador4").click(function(){
+								console.log("click")
+								
+							$("#MousseEsparragos").slideToggle(2000)
+						});
+						});
+					</script>
+
+				</div>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador5">Pudin de Pescado</h2>
+					<div class="Descripcion" id="PudinPescado">
+					<ul class="Ingredientes">
+						<li>1 paquete de pescada congelada o una pescada entera</li><hr>
+						<li>3 huevos</li><hr>
+						<li>1/2 cebolla</li><hr>
+						<li>2 hojas de laurel</li><hr>
+						<li>Una lata pequeña de tomate natural triturado</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Cocer el pescado en un caldo corto: agua, media cebolla, 2 hojas de laurel y chorreón de vino durante unos 10 minutos.</li><br>
+						<li>Cuando esté blando el pescado, se saca, se deja enfriar y se desmenuza.</li><br>
+						<li>Se baten las claras a punto de nieve y se añaden las yemas.</li><br>
+						<li>Se mezcla con el pescado, añadimos tomate frito (mejor si es casero)  y batimos todo bien para que el pescado quede bien desmenuzado.</li><br>
+						<li>Rectificamos de sal.</li>
+						<li>Cogemos un molde, lo untamos con aceite y espolvoreamos pan rallado.</li><br>
+						<li>Ponemos la mezcla en el molde y el molde al baño maría en el fuego mientras se calienta el horno hasta que hierva el agua.</li><br>
+						<li>Meter en el horno unos 30 minutos.</li><br>
+						<li>Para saber si está listo metemos una aguja o un cuchillo y si sale limpio es que ya está hecho.</li><br>
+						<li>Dejamos enfriar en la nevera y servimos cubierto de mayonesa.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador5").click(function(){
+								console.log("click")
+								
+							$("#PudinPescado").slideToggle(2000)
+						});
+						});
+					</script>
+
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador6">Ensalada Mixta</h2>
+					<div class="Descripcion" id="EnsaladaMixta">
+					<ul class="Ingredientes">
+						<li>Lechuga</li><hr>
+						<li>Tomate</li><hr>
+						<li>1/4 o 1/2 cebolla</li><hr>
+						<li>Atún</li><hr>
+						<li>Sal, aceite y pimienta</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se pica la lechuga y se lava bien.</li><br>
+						<li>Se escurre bien el agua y se pone en una fuente.</li><br>
+						<li>Se lava bien el tomate y se trocea.</li><br>
+						<li>Se pela la cebolla y se trocea.</li><br>
+						<li>Se abre la lata de atún, se escurre de su aceite y se añade a la ensalada.</li><br>
+						<li>Se pone todo en la fuente y se aliña con sal, vinagre y aceite en este orden.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador6").click(function(){
+								console.log("click")
+								
+							$("#EnsaladaMixta").slideToggle(2000)
+						});
+						});
+					</script>
+
+				</div>	
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador7">Ensalada de queso, jamón y tomate</h2>
+					<div class="Descripcion" id="EnsaladaQuesoJamonTomate">
+					<ul class="Ingredientes">
+						<li>Lechuga</li><hr>
+						<li>Tomate</li><hr>
+						<li>Queso feta, fresco, en daditos</li><hr>
+						<li>Embutido: jamón york, pavo, mortadela, jamón serrano ...troceado</li><hr>
+						<li>Sal, aceite y vinagre</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se pica la lechuga y se lava bien.</li><br>
+						<li>Se escurre bien del agua y se pone en una fuente.</li><br>
+						<li>Se lava bien el tomate y se trocea.</li><br>
+						<li>Se trocea el embutido.</li><br>
+						<li>Se añade el queso.</li><br>
+						<li>Se pone todo en la fuente y se aliña con sal, vinagre y aceite en este orden.</li><br>
+						<li>* Lo mismo se puede hacer sustituyendo la lechuga por pasta.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador7").click(function(){
+								console.log("click")
+								
+							$("#EnsaladaQuesoJamonTomate").slideToggle(2000)
+						});
+						});
+					</script>
+
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador8">Ensalada de tomate, atún y piña</h2>
+					<div class="Descripcion" id="EnsaladaTomateAtunPi">
+					<ul class="Ingredientes">
+						<li>Una bolsa de mezclum de lechugas</li><hr>
+						<li>Una lata de atún</li><hr>
+						<li>Un tomate o varios tomatitos cherry</li><hr>
+						<li>Una rodaja de piña  natural troceada</li><hr>
+						<li>Sal, aceite y vinagre</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se pone  la lechuga en un bol y se añade el resto de los ingredientes.</li><br>
+						<li>Se aliña con sal, aceite y vinagre.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador8").click(function(){
+								console.log("click")
+								
+							$("#EnsaladaTomateAtunPi").slideToggle(2000)
+						});
+						});
+					</script>
+
+				</div>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador9">Pimientos rellenos de Clara</h2>
+					<div class="Descripcion" id="PimientosClara">
+					<ul class="Ingredientes">
+						<li>Una tarrina de queso Philadelphia grande</li><hr>
+						<li>2 latas de atún</li><hr>
+						<li>5 o 6 palitos de surimi</li><hr>
+						<li>20 pimientos rojos de bote</li><hr>
+						<li>Una cebolleta</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se mezcla el queso, el atún y el surimi en un bol. Si se queda muy espeso se añade un chorrito de leche. Se puede batir un poco.</li><br>
+						<li>Se rellenan los pimientos y se van colocando sobre una cama de cebolleta y pimientos verdes previamente picados y aliñados.</li><br>
+						<li>Se añade el caldo de los pimientos por encima.</li><br>
+						<li>Se sirve frío pero no mucho.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador9").click(function(){
+								console.log("click")
+								
+							$("#PimientosClara").slideToggle(2000)
+						});
+						});
+					</script>
+
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador10">Ensalada campera</h2>
+					<div class="Descripcion" id="EnsaladaCampera">
+					<ul class="Ingredientes">
+						<li>4 ó 5 patatas medianas</li><hr>
+						<li>Dos latas de atún</li><hr>
+						<li>1 pimiento rojo y uno verde medianos</li><hr>
+						<li>1 tomate</li><hr>
+						<li>1/2 cebolla o cebolleta</li><hr>
+						<li>1 huevo duro</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se cuecen las patatas enteras y con piel en la olla a presión durante unos diez minutos en una cacerola unos veinte minutos.</li><br>
+						<li>Se pican los pimientos, cebolla, tomate.</li><br>
+						<li>Se añade el atún y se reserva el aceite para hacer la vinagreta.</li><br>
+						<li>Cuando se hayan cocido las patatas se pelan y se trocean en cuadraditos.</li><br>
+						<li>Se mezclan con la verdura y el atún.</li><br>
+						<li>Con el aceite de las latas de atún, un chorreón de vinagre, sal y unos 50 ml más de aceite de oliva hacemos una vinagreta.</li><br>
+						<li>Lo ponemos por encima de las patatas aún templadas y se mezcla todo bien.</li><br>
+						<li>Se mete en la nevera un buen rato hast que esté fría y está listo para comer.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador10").click(function(){
+								console.log("click")
+								
+							$("#EnsaladaCampera").slideToggle(2000)
+						});
+						});
+					</script>
+
+				</div>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador11">Pastel de Salmón de Clara</h2>
+					<div class="Descripcion" id="PastelSalmonClara">
+					<ul class="Ingredientes">
+						<li>Trucha, salmón y palometa ahumada.</li><hr>
+						<li>Rebanadas de pan de molde sin corteza.</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>En una fuente se pone una capa de ahumados, una capa de pan untada con mayonesa por los dos lados, otra capa de ahumados, pan.. así hasta un mínimo de tres capas, siendo la última una de pan.</li><br>
+						<li>Se envuelve en papel albal y se mete en la nevera con algo que pese encima.</li><br>
+						<li>Cuando esté prensado se unta con mayonesa por todos lados y se adorna.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador11").click(function(){
+								console.log("click")
+								
+							$("#PastelSalmonClara").slideToggle(2000)
+						});
+						});
+					</script>
+
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador12">Ensalada de arroz</h2>
+					<div class="Descripcion" id="EnsaladaArroz">
+					<ul class="Ingredientes">
+						<li>Arroz basmati</li><hr>
+						<li>Tortilla</li><hr>
+						<li>Jamón york</li><hr>
+						<li>(Guisantes, gambas...)</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se hace un arroz blanco.</li><br>
+						<li>Se hace una tortilla francesa y se trocea.</li><br>
+						<li>En un bol se pone el arroz y se añade la tortilla troceada y el jamón cortado finito.</li><br>
+						<li>Se remueve todo bien y se añade sal al gusto.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador12").click(function(){
+								console.log("click")
+								
+							$("#EnsaladaArroz").slideToggle(2000)
+						});
+						});
+					</script>
+
+				</div>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador13">Huevos Rellenos</h2>
+					<div class="Descripcion" id="HuevosRellenos">
+					<ul class="Ingredientes">
+						<li>1 huevo por persona</li><hr>
+						<li>Atún</li><hr>
+						<li>Mayonesa</li><hr>
+						<li>Tomate</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>En un cazo ponemos agua a hervir con sal.</li><br>
+						<li>Cuando hierva añadimos los huevos y los dejamos hervir durante unos 15 minutos.</li><br>
+						<li>Pasado este tiempo los retiramos del fuego y los dejamos enfriar.</li><br>
+						<li>Una vez fríos, los pelamos y abrimos por la mitad.</li><br>
+						<li>Retiramos las yemas y las ponemos en un bol.</li><br>
+						<li>Añadimos el atún, mayonesa y un poquito de tomate frito.</li><br>
+						<li>Mezclamos y rellenamos los huevos con esta pasta.</li><br>
+						<li>Preparamos un poco de mayonesa y cubrimos los huevos con ella.</li><br>
+						<li>Adornamos con pimiento rojo y aceitunas.</li><br>
+						<li>Metemos en la nevera y servimos frío.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador13").click(function(){
+								console.log("click")
+								
+							$("#HuevosRellenos").slideToggle(2000)
+						});
+						});
+					</script>
+
+				</div>
+				<div class="Receta" id="Vacio"></div>
+			</div>
+
+
+		</section>
+
+	</body>
+</html>
