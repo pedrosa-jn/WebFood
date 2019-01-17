@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<title>Carnes</title>
+		<link rel="shortcut icon" href="./Img/IconCarne.png"/>
+		<link rel="stylesheet" type="text/css" href="./css/EstiloCarnes.css">
+		<link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<nav class="Navegador">
+			<ul>
+				<li><hr><a class="EnlaceMenu" id="Home" href="./index.html">Home</a><hr></li>
+				<li><a class="EnlaceMenu" href="./salsas.html"><img src="./Img/IconSalsa.png">Salsas</a></li>
+				<li><a class="EnlaceMenu" href="./ensaladas.html"><img src="./Img/IconEnsalada.png">Ensaladas</a></li>
+				<li><a class="EnlaceMenu" href="./guisos.html"><img src="./Img/IconCarne.png">Guisos</a></li>
+				<li><a class="EnlaceMenu" href="./pastas.html"><img src="./Img/IconPasta.png">Pasta</a></li>
+				<li><a class="EnlaceMenu" href="./pollos.html"><img src="./Img/IconPollo.png">Pollo</a></li>
+				<li><a class="EnlaceMenu" href="./huevos.html"><img src="./Img/IconHuevo.png">Huevo</a></li>
+				<li><a class="EnlaceMenu" href="./pescados.html"><img src="./Img/IconPescado.png">Pesccado</a></li>
+				<li><a class="EnlaceMenu" href="./otros.html"><img src="./Img/IconOtros.png">Otros</a></li>
+				<li><a class="EnlaceMenu" href="./postres.html"><img src="./Img/IconPostre.png">Postres</a></li>
+			</ul>
+			<div class="Menu Transitions">
+					<div class="Transitions" id="barra1"></div>
+					<div class="Transitions" id="barra2"></div>
+					<div class="Transitions" id="barra3"></div>
+			</div>
+
+			<script type="text/javascript">
+				$ (function(){
+					$(".Menu").click(function(){
+						console.log("click")
+						
+					$("nav.Navegador ul").slideToggle(2000)
+					$(".Menu,body,ul").toggleClass("Abierto")
+				});
+				});
+			</script>
+		</nav>
+
+		<section><div id="Velo"></div>
+			
+			<div id="Titulo">
+				<a href="./index.html"><div id="back"><</div></a>
+				<img src="./Img/IconCarne.png">
+				<h3>
+					<span>Carne</span>
+		    	</h3>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador1">Rollo de Carne</h2>
+					<div class="Descripcion" id="RolloCarne">
+					<ul class="Ingredientes">
+						<li>1 aleta de ternera de 1kg</li><hr>
+						<li>Cebollas</li><hr>
+						<li>Vino</li><hr>
+						<li>Ajos</li><hr>
+						<li>Carne picada de cerdo con ajo y perejil (relleno)</li><hr>
+						<li>Jamón serrano en tiras (relleno)</li><hr>
+						<li>2 huevos duros cocidos (relleno)</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se extiende la carne y se pone a carne picada en medio en una tira y entre medias se añade el jamón en tiras y el huevo duro en rodajas.</li><br>
+						<li>Se enrolla bien y se atan con un cordel y en los extremos se pone un palillo.</li><br>
+						<li>Se marea el rollo solo.</li><br>
+						<li>Se dora cebolla, vino y ajo y cuando esté dorado se añade el rollo que se marea.</li><br>
+						<li>Se mete en la olla a presión tres cuartos de hora, se pasa la salsa y se deja que se enfría la carne antes de cortarlo y se sirve.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador1").click(function(){
+								console.log("click")
+								
+							$("#RolloCarne").slideToggle(1500)
+						});
+						});
+					</script>	
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador2">Carne con Tomate</h2>
+					<div class="Descripcion" id="CarneTomate">
+					<ul class="Ingredientes">
+						<li>Carne de ternera troceada 1kg y medio</li><hr>
+						<li>3 dientes de ajo</li><hr>
+						<li>2 cebollas</li><hr>
+						<li>Vino blanco y vino tinto</li><hr>
+						<li>1 lata de tomate triturado</li><hr>
+						<li>Dos hojas de laurel</li><hr>
+						<li>Sal y Pimienta</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se salpimenta y se dora la carne.</li><br>
+						<li>Se dora la cebolla y los dientes de ajo muy picados.</li><br>
+						<li>Se rehoga con la carne en la sartén unos diez minutos y se añade el tomate, el laurel, el vino  y medio vaso de agua.</li><br>
+						<li>Se cuece a fuego lento 40 minutos, o se mete en la olla unos 20 minutos para asegurarnos de que la carne quede tierna.</li><br>
+						<li>Se sirve acompañada de patatas fritas, puré de patatas o asadas.</li>
+					</ul>
+					</div>
+				</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador2").click(function(){
+								console.log("click")
+								
+							$("#CarneTomate").slideToggle(1500)
+						});
+						});
+					</script>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador3">Albóndigas</h2>
+					<div class="Descripcion" id="Albondigas">
+					<ul class="Ingredientes">
+						<li>1/2Kg de carne picada (cerdo y ternera | cerdo y pollo)</li><hr>
+						<li>1 cebolla grande</li><hr>
+						<li>2 dientes de ajo</li><hr>
+						<li>Vino Blanco</li><hr>
+						<li>Perejil</li><hr>
+						<li>Pan rallado</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>En un bol se pone la carne picada, se salpimenta y se le pica un diente de ajo pequeño, un huevo batido, un chorrito de vino y dos puñados de pan rallado.</li><br>
+						<li>Se mezcla todo bien y se van haciendo bolas pequeñas.</li><br>
+						<li>Se pasan por harina y se fríen en una cacerola con un poco de aceite.</li><br>
+						<li>Cuando estén doradas se sacan y se apartan en un plato.</li><br>
+						<li>Se pica la cebolla y se dora en la cacerola, cuando esté dorada se añade medio vaso de vino y se deja cocer un poco, añadimos agua y echamos las albóndigas.</li><br>
+						<li>Añadimos una pastilla de avecrem desleída y colorante y dejamos hervir un rato hasta que las albóndigas estén tiernas y sin dejar que se consuma el líquido.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador3").click(function(){
+								console.log("click")
+								
+							$("#Albondigas").slideToggle(1500)
+						});
+						});
+					</script>	
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador4">Solomillo de Cerdo de la Abuela Cheli</h2>
+					<div class="Descripcion" id="SolomilloCheli">
+					<ul class="Ingredientes">
+						<li>Dos solomillos de cerdoo</li><hr>
+						<li>Limón</li><hr>
+						<li>Sal</li><hr>
+						<li>Aceite</li><hr>
+						<li>Ajo</li><hr>
+						<li>Perejil</li><hr>
+						<li>Una pastilla de avecrem</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se pican el ajo y el perejil.</li><br>
+						<li>Se salpimenta la carne.</li><br>
+						<li>SEn una fuente se pone la carne y se adereza con el ajo y el perejil, el zumo de limón, un chorro de aceite y el caldo de avecrem y se mete en el horno con el fuego arriba y abajo durante unos 20 minutos.</li>
+					</ul>
+					</div>
+				
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador4").click(function(){
+								console.log("click")
+								
+							$("#SolomilloCheli").slideToggle(1500)
+						});
+						});
+					</script>
+				</div>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador5">Solomillo de ternera de Navidad de<br>la Abuela Cheli</h2>
+					<div class="Descripcion" id="SolomilloNavidad">
+					<ul class="Ingredientes">
+						<li>Un solomillo de ternera</li><hr>
+						<li>Ajo</li><hr>
+						<li>Aceite</li><hr>
+						<li>Una pastilla de avecrem</li><hr>
+						<li>Una copa de coñac u oporto</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se sala el solomillo y se pone en una fuente en el horno previamente precalentado muy fuerte.</li><br>
+						<li>Se añade un chorreón de aceite.</li><br>
+						<li>Se pica ajo y se le echa por encima a la carne.</li><br>
+						<li>Se añade un chorreón de coñac u oporto.</li><br>
+						<li>Se disuelve una pastilla de avecrem en agua y se le echa a la carne cuando se haya evaporado el alcohol</li><br>
+						<li>Después de una media hora se saca del horno y se corta en rodajas.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador5").click(function(){
+								console.log("click")
+								
+							$("#SolomilloNavidad").slideToggle(1500)
+						});
+						});
+					</script>	
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador6">Carne en Salsa de la Abuela Carmen</h2>
+					<div class="Descripcion" id="CarneAbCarmen">
+					<ul class="Ingredientes">
+						<li>Uno o dos solomillos de cerdo según el tamaño</li><hr>
+						<li>Dos dientes de ajo</li><hr>
+						<li>Dos o tres cebollas</li><hr>
+						<li>Un vaso de vino</li><hr>
+						<li>Sal y Pimienta</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se unta la carne con el ajo majado, sal y un vaso de vino.</li><br>
+						<li>Se dora la carne en una sartén y se saca cuando esté.</li><br>
+						<li>En ese mismo aceite se dora bastante cebolla previamente picada.</li><br>
+						<li>Cuando esté dorada se añade un puñado de almendras, la carne, avecrem y agua y se cuece unos 15 minutos en la olla.</li><br>
+						<li>Se pasa la salsa y se corta la carne.</li><br>
+						<li>Se puede acompañar de una patatas fritas.</li>
+					</ul>
+					</div>
+				
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador6").click(function(){
+								console.log("click")
+								
+							$("#CarneAbCarmen").slideToggle(1500)
+						});
+						});
+					</script>
+				</div>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador7">Albondigón</h2>
+					<div class="Descripcion" id="Albondigon">
+					<ul class="Ingredientes">
+						<li>1Kg de carne picada (1/2 de cerdo y 1/2 de ternera)</li><hr>
+						<li>1 cebolla grande</li><hr>
+						<li>2 dientes de ajo</li><hr>
+						<li>Vino blanco</li><hr>
+						<li>Pan rallado</li><hr>
+						<li>Avecrem</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>En un bol se pone la carne picada, se salpimenta y se le pica un diente de ajo pequeño, dos huevos batidos, un chorrito de vino y tres puñados de pan rallado.</li><br>
+						<li>Se mezcla todo bien y se deja reposar un poco.</li><br>
+						<li>Se hace una bola grande alargada y se pasa por harina.</li><br>
+						<li>Se dora la cebolla en una cacerola con un poco de aceite y cuando esté dorada se añade la carne y se sofrie con la cebolla.</li><br>
+						<li>Se añade un vaso de vino blanco y se deja evaporar.</li><br>
+						<li>Pasamos a la olla con agua y una pastilla de avecrem y se cierra.</li><br>
+						<li>Se tiene a fuego una vez que suba la pesa unos 15 minutos.</li><br>
+						<li>Cuando estén doradas se sacan y se apartan en un plato.</li><br>
+						<li>Se pica la cebolla y se dora en la cacerola, cuando esté dorada se añade medio vaso de vino y se deja cocer un poco, añadimos agua y echamos las albóndigas.</li><br>
+						<li>Añadimos una pastilla de avecrem desleída y colorante y dejamos hervir un rato hasta que las albóndigas estén tiernas y sin dejar que se consuma el líquido.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador7").click(function(){
+								console.log("click")
+								
+							$("#Albondigon").slideToggle(1500)
+						});
+						});
+					</script>	
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador8">Codillo</h2>
+					<div class="Descripcion" id="Codillo">
+					<ul class="Ingredientes">
+						<li>Un codillo</li><hr>
+						<li>1/2 vaso de vino blanco</li><hr>
+						<li>Una bandeja de verduras variada</li><hr>
+						<li>Una hoja de laurel</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>En la olla se pone el codillo con todos los ingredientes y se cubre de agua | No añadir sal</li><br>
+						<li>Se cuece durante unos 90 minutos.</li>
+					</ul>
+					</div>
+				</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador8").click(function(){
+								console.log("click")
+								
+							$("#Codillo").slideToggle(1500)
+						});
+						});
+					</script>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador9">Cinta de Lomo a la Sal</h2>
+					<div class="Descripcion" id="CintaLomoSal">
+					<ul class="Ingredientes">
+						<li>1Kg de cinta de lomo para 8 personas</li><hr>
+						<li>1/2Kg para 4</li><hr>
+						<li>Sal gorda: el doble de lo que pese la carne</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se limpia la carne de la grasa más gorda.</li><br>
+						<li>Se cubre una fuente con parte de la sal y se coloca la carne con el resto de la sal de manera que quede bien cubierta.</li><br>
+						<li>Se mete en el horno hasta que la sal se vaya abriendo.Se pincha la carne, si sale sangre es que no está.</li><br>
+						<li>Se saca la carne de la sal y se corta en rodajas.</li><br>
+						<li>Se puede servir con puré de manzana, ensalada de pimientos...</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador9").click(function(){
+								console.log("click")
+								
+							$("#CintaLomoSal").slideToggle(1500)
+						});
+						});
+					</script>	
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador10">Carne Estofada</h2>
+					<div class="Descripcion" id="CarneEstofada">
+					<ul class="Ingredientes">
+						<li>1Kg y 1/4 de carne para estofar</li><hr>
+						<li>4 o 5 dientes de ajo</li><hr>
+						<li>1 cebolla</li><hr>
+						<li>4 o 5 zanahorias</li><hr>
+						<li>Dos tomates</li><hr>
+						<li>Una hoja de laurel</li><hr>
+						<li>2 cucharadas de pimentón dulce</li><hr>
+						<li>Cuatro patatas troceadas</li><hr>
+						<li>Vinagre y Vino</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se marea el ajo, la cebolla, el tomate, el pimiento y las zanahorias previamente troceadas.</li><br>
+						<li>Se añade un vaso de vino, un chorreón de vinagre y una hoja de laurel y se marea todo junto unos 10 minutos.</li><br>
+						<li>Se pasa todo a la olla con las patatas troceadas y se añade una cucharadita muy pequeña de pimentón y se deja cocer unos 20 minutos.</li>
+					</ul>
+					</div>
+				
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador10").click(function(){
+								console.log("click")
+								
+							$("#CarneEstofada").slideToggle(1500)
+						});
+						});
+					</script>
+				</div>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador11">Cordero Abuela Cheli</h2>
+					<div class="Descripcion" id="CorderoCheli">
+					<ul class="Ingredientes">
+						<li>Una pierna de cordero o una paletilla</li><hr>
+						<li>Vinagre y sal</li><hr>
+						<li>Ajo y Aceite</li><hr>
+						<li>Limón</li><hr>
+						<li>Aceite</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se unta el cordero con el vinagre y la sal.</li><br>
+						<li>Se maja bastante ajo ( no una cabeza entera), limón y aceite.</li><br>
+						<li>Se unta bien el cordero con ello.</li><br>
+						<li>Se deja macerar unas cuantas horas.</li><br>
+						<li>Se pone el cordero en una fuente de horno con un chorreón de aceite.</li><br>
+						<li>Se mete en el horno bajo, menos de 200ºC.</li><br>
+						<li>Aparte se disuelven dos pastillas de avecrem con agua.</li><br>
+						<li>Se baña el cordero constantemente.</li><br>
+						<li>Cuando esté hecho se pone ¼ de hora más con el horno fuerte arriba y abajo.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador11").click(function(){
+								console.log("click")
+								
+							$("#CorderoCheli").slideToggle(1500)
+						});
+						});
+					</script>	
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador12">Cordero Adela</h2>
+					<div class="Descripcion" id="CorderoAdela">
+					<ul class="Ingredientes">
+						<li>Una pierna de cordero</li><hr>
+						<li>Sal y Aceite</li><hr>
+						<li>Cebolla</li><hr>
+						<li>Una cabeza de ajo sin pelar</li><hr>
+						<li>Una hoja de laurel</li><hr>
+						<li>Vinagre</li><hr>
+						<li>Una patata por persona</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se pone el  horno arriba y abajo muy fuerte.</li><br>
+						<li>Se pone el cordero en una fuente de barro untado con sal y aceite.</li><br>
+						<li>Se achicharra en el horno y se le da la vuelta.</li><br>
+						<li>En un cazo se pone una cebolla cortada en cuatro, un cabeza de ajo sin pelar, una hoja de laurel, un chorreón de vinagre (medio vaso) con agua y se tiene hirviendo unos cinco minutos.</li><br>
+						<li>Cuando el cordero esté chamuscado se pone el fuego solo por abajo al mínimo, se le echa el caldo del cazo y algo más de sal.</li><br>
+						<li>Se añade una patata por persona y se va moviendo el cordero.</li>
+					</ul>
+					</div>
+				
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador12").click(function(){
+								console.log("click")
+								
+							$("#CorderoAdela").slideToggle(1500)
+						});
+						});
+					</script>
+				</div>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador13">Cordero a mi manera</h2>
+					<div class="Descripcion" id="CorderoMiManera">
+					<ul class="Ingredientes">
+						<li>Cordero</li><hr>
+						<li>Vinagre</li><hr>
+						<li>Sal, perejil y limón</li><hr>
+						<li>Cebolla</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Untar el cordero con vinagre y sal y dejar macerar unas horas.</li><br>
+						<li>Hacer un majado de ajo, aceite, perejil y limón.</li><br>
+						<li>Batir y untar el cordero.</li><br>
+						<li>Precalentar el horno a 200ºC y meter el cordero unos 20 minutos.</li><br>
+						<li>En un cazo poner agua, vinagre (un poco menos de medio vaso) una cebolla cortada y ajo y hervir cinco minutos con el avecrem.</li><br>
+						<li>Regar el cordero con la mezcla del cazo y poner más fuerte el horno durante unos 20 minutos más.</li><br>
+						<li>Ir regando el cordero y darle la vuelta.</li><br>
+						<li>Después de unos 10 minutos, apagar el horno y servir.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador13").click(function(){
+								console.log("click")
+								
+							$("#CorderoMiManera").slideToggle(1500)
+						});
+						});
+					</script>	
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador14">Carne en Salsa</h2>
+					<div class="Descripcion" id="CarneSalsa">
+					<ul class="Ingredientes">
+						<li>Un rollo de 1kg y medio de ternera</li><hr>
+						<li>Una cebolla y media</li><hr>
+						<li>Casi una cabeza de ajo</li><hr>
+						<li>Aceite</li><hr>
+						<li>1/2 vaso de vino blanco</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>En un perol se pone un chorro de aceite, una cebolla grande troceada y unos seis dientes de ajo enteros. Y se dora todo bien.</li><br>
+						<li>Se añade la carne y se marea hasta dorarse.</li><br>
+						<li>Se añade el vaso de vino blanco y se deja al fuego unos 5 minutos para que se evapore el vino.</li><br>
+						<li>Se pone todo en la olla a presión y se añade agua cubriendo un poquito la carne durante 30 minutos.</li><br>
+						<li>Se pasa la salsa (este mismo guiso sirve para el pollo y el albondigón).</li>
+					</ul>
+					</div>
+				
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador14").click(function(){
+								console.log("click")
+								
+							$("#CarneSalsa").slideToggle(1500)
+						});
+						});
+					</script>
+				</div>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador15">Lomo al Caramelo</h2>
+					<div class="Descripcion" id="LomoCaramelo">
+					<ul class="Ingredientes">
+						<li>Un par de solomillos de cerdo</li><hr>
+						<li>Una cebolla y media</li><hr>
+						<li>Dos o tres dientes de ajo</li><hr>
+						<li>Aceite</li><hr>
+						<li>1/2 vaso de vino blanco</li><hr>
+						<li>Una cucharada de caramelo líquido</li><hr>
+						<li>Zumo de una naranja</li><hr>
+						<li>Un sobre de crema de champiñones</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se salpimenta la carne y se dora en una sartén con un chorreón de aceite.</li><br>
+						<li>Se dora la cebolla y los dientes de ajo y se añade la carne.</li><br>
+						<li>Lo mareamos todo bien y se añade el vino.</li><br>
+						<li>Después de unos 5 minutos añadimos la cucharada de caramelo líquido, el zumo de naranja y agua y se mete en la olla unos 15 minutos.</li><br>
+						<li>Se prepara una crema de champiñón aparte y se añade a la olla cuando la carne ya esté blanda.</li><br>
+						<li>Se corta la carne y se sirve con patatas fritas, puré…</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador15").click(function(){
+								console.log("click")
+								
+							$("#LomoCaramelo").slideToggle(1500)
+						});
+						});
+					</script>	
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador16">Filetes Rusos</h2>
+					<div class="Descripcion" id="FiletesRusos">
+					<ul class="Ingredientes">
+						<li>1/2Kg de carne picada (1/4 de cerdo y 1/4 de ternera | 1/4 de cerdo y 1/4 de pollo)</li><hr>
+						<li>2 dientes de ajo</li><hr>
+						<li>Vino blanco</li><hr>
+						<li>Perejil</li><hr>
+						<li>Pan rallado</li><hr>
+						<li>Jamón (una punta o un trozo de tocino)</li><hr>
+						<li>Media cebolla doradita</li><hr>
+						<li>Un chorreón de leche</li><hr>
+						<li>Una pastilla de avecrem desmenuzada (opcional)</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>En un bol se bate un huevo y se añade la carne picada salpimentada y el diente de ajo picado.</li><br>
+						<li>Añadimos la leche, pan rallado, la cebolla dorada y el avecrem.</li><br>
+						<li>Se van haciendo bolitas, se pasan por pan rallado, se aplastan con la mano y se fríen.</li>
+					</ul>
+					</div>
+				
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador16").click(function(){
+								console.log("click")
+								
+							$("#FiletesRusos").slideToggle(1500)
+						});
+						});
+					</script>
+				</div>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador17">Filetes Empanados</h2>
+					<div class="Descripcion" id="FiletesEmpanados">
+					<ul class="Ingredientes">
+						<li>Filete de vaca por persona</li><hr>
+						<li>Sal</li><hr>
+						<li>Pan rallado</li><hr>
+						<li>Huevo</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se adereza  la carne con sal  y se pasa por el huevo y el pan rallado.</li><br>
+						<li>Se fríe en abundante aceite.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador17").click(function(){
+								console.log("click")
+								
+							$("#FiletesEmpanados").slideToggle(1500)
+						});
+						});
+					</script>	
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador18">Flamenquines</h2>
+					<div class="Descripcion" id="Flamenquines">
+					<ul class="Ingredientes">
+						<li>Filetes de pollo o cerdo</li><hr>
+						<li>Jamón serrano</li><hr>
+						<li>Limón</li><hr>
+						<li>Pan rallado</li><hr>
+						<li>Huevo</li><hr>
+						<li>Aceite</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Filetes de pechuga muy finos.</li><br>
+						<li>Se extienden bien, se salan y se rocían con un limón.</li><br>
+						<li>Se van haciendo bolitas, se pasan por pan rallado, se aplastan con la mano y se fríen.</li><br>
+						<li>Se pone una loncha de jamón serrano muy fino sobre cada filete.</li><br>
+						<li>Se enrolla el filete (se sujeta con palillos si se quedase abierto).</li><br>
+						<li>Se pasa por huevo y pan rallado.</li><br>
+						<li>Se fríen.</li>
+					</ul>
+					</div>
+				
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador18").click(function(){
+								console.log("click")
+								
+							$("#Flamenquines").slideToggle(1500)
+						});
+						});
+					</script>
+				</div>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador19">Roast Beef</h2>
+					<div class="Descripcion" id="RoastBeef">
+					<ul class="Ingredientes">
+						<li>Una pieza de tapa de carne de 1 kg y 800 gramos</li><hr>
+						<li>1 cebolla</li><hr>
+						<li>Aceite</li><hr>
+						<li>Majado de aceite, ajo, perejil y coñac o vino y pimienta (opcional)</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se unta la carne con el majado o se salpimenta solo.Si hemos elegido la opción del majado dejamos macerar un poco.</li><br>
+						<li>Se pone la carne en el horno alto a tope por arriba y por abajo en la rejilla con un chorreón de aceite si no hemos añadido el majado.</li><br>
+						<li>En la parte de abajo del horno en la bandeja se pone una cebolla troceada.</li><br>
+						<li>Después de 15 minutos  se da la vuelta a la carne y se le echa otro chorreón de aceite otros 15 minutos.</li><br>
+						<li>Se apaga el horno y se baja la rejilla a la altura mínima dejando la carne dentro con el horno apagado unos 20 minutos.</li><br>
+						<li>Se saca la cebolla y se hace una salsa con ella añadiendo agua y avecrem si hace falta. Se pasa la salsa.</li><br>
+						<li>Pasados los 20 minutos se saca la carne y se deja enfriar. se sirve en rodajas con la salsa aparte.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador19").click(function(){
+								console.log("click")
+								
+							$("#RoastBeef").slideToggle(1500)
+						});
+						});
+					</script>	
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador20">Albóndigas Amarillas</h2>
+					<div class="Descripcion" id="AlbondigasAmarillas">
+					<ul class="Ingredientes">
+						<li>1/2 Kg de carne picada (1/4 de cerdo y 1/4 de ternera | 1/4 de cerdo y 1/4 de pollo)</li><hr>
+						<li>2 dientes de ajo</li><hr>
+						<li>Vino Blanco</li><hr>
+						<li>Perejil</li><hr>
+						<li>Pan rallado</li><hr>
+						<li>Jamón (una punta o un trozo de tocino)</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>En un bol se pone la carne picada, se salpimenta y se le pica un diente de ajo pequeño, un huevo batido, un chorrito de vino y dos puñados de pan rallado</li><br>
+						<li>Se mezcla todo bien y se van haciendo bolas pequeñas y se pasan por harina.</li><br>
+						<li>Se majan tres dientes de ajo en el mortero con sal y un poquito de agua.</li><br>
+						<li>En una olla o fuente de barro se pone un poco de aceite y el diente de ajo machacado. Se añade agua como hasta la mitad de la cacerola, un trozo de jamón o tocino y vino blanco, cuando hierva se añaden las albóndigas.</li><br>
+						<li>Añadimos una pastilla de avecrem desleída y colorante y dejamos hervir un rato hasta que las albóndigas estén tiernas y sin dejar que se consuma el líquido.</li>
+					</ul>
+					</div>
+				
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador20").click(function(){
+								console.log("click")
+								
+							$("#AlbondigasAmarillas").slideToggle(1500)
+						});
+						});
+					</script>
+				</div>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador21">Carne Mechada</h2>
+					<div class="Descripcion" id="Mechada">
+					<ul class="Ingredientes">
+						<li>Carne de babilla o de cadera</li><hr>
+						<li>Ajos</li><hr>
+						<li>Perejil</li><hr>
+						<li>Pimienta en grano</li><hr>
+						<li>Dos clavos</li><hr>
+						<li>Tocino de jamón o salado</li><hr>
+						<li>Salsa: 2 cebollas, pimiento, ajo, un tomate y ajo asado opcional</li><hr>
+						<li>Aceite</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se pican 4 o 5 dientes de ajo picado, pimienta, perejil, los dos clavos y el tocino troceado y se mete dentro de la carne a puñaditos.</li><br>
+						<li>Una vez rellena, untar sal por fuera y se sella.</li><br>
+						<li>Se pasa a la olla y en ese aceite se hace el sofrito con la verdura a fuego lento.</li><br>
+						<li>Se añade a la olla, agua medio cubierta y dos pastillas de avecrem, en la olla a presión media hora más o menos.</li><br>
+						<li>Una vez hecha se pasa toda la salsa y se corta la carne en filetes.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador21").click(function(){
+								console.log("click")
+								
+							$("#Mechada").slideToggle(1500)
+						});
+						});
+					</script>	
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador22">Carrillada</h2>
+					<div class="Descripcion" id="Carrillada">
+					<ul class="Ingredientes">
+						<li>Tres cebollas</li><hr>
+						<li>Cinco dientes de ajo</li><hr>
+						<li>1 Kg de carrillada</li><hr>
+						<li>Vino blanco</li><hr>
+						<li>Sal y pimienta</li><hr>
+						<li>Laurel</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se pelan los ajos y la cebolla y se doran en la sartén.</li><br>
+						<li>Se salpimenta la carne.</li><br>
+						<li>Una vez dorada la cebolla, se añade la carne y se sofríe todo.</li><br>
+						<li>Se añade un vaso de vino blanco y se deja cocer hasta que se evapore el vino y una hojita de laurel.</li><br>
+						<li>Se pasa todo a la olla express cubierto con agua y se tiene una media hora.</li><br>
+						<li>Pasado este tiempo se deja enfriar la olla y se abre.</li><br>
+						<li>Se puede servir con una guarnición de patatas fritas, arroz, puré de patatas…</li>
+					</ul>
+					</div>
+				
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador22").click(function(){
+								console.log("click")
+								
+							$("#Carrillada").slideToggle(1500)
+						});
+						});
+					</script>
+				</div>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador23">Cinta de Lomo con Ciruelas,<br>Orejones e Higos</h2>
+					<div class="Descripcion" id="CirOreHigos">
+					<ul class="Ingredientes">
+						<li>Cinta de lomo de cerdo</li><hr>
+						<li>Cebolla</li><hr>
+						<li>Ajos</li><hr>
+						<li>Ciruelas, orejones e higos</li><hr>
+						<li>Vino tinto y/u oporto</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se sella la cinta salpimentada.</li><br>
+						<li>Se aparta.</li><br>
+						<li>Se fríen las cebollas, y dientes de ajo y a eso se le añade vino tinto y se dora con la carne.</li><br>
+						<li>En una fuente de horno se pone la carne con la cebolla y los orejones por encima, unos tres cuartos de hora.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador23").click(function(){
+								console.log("click")
+								
+							$("#CirOreHigos").slideToggle(1500)
+						});
+						});
+					</script>	
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador24">Cinta de Lomo al Horno</h2>
+					<div class="Descripcion" id="LomoHorno">
+					<ul class="Ingredientes">
+						<li>Una pieza de 1kg y cuarto de cinta de lomo</li><hr>
+						<li>2 cebollas</li><hr>
+						<li>8 dientes de ajo</li><hr>
+						<li>Aceite/li><hr>
+						<li>Sal y laurel</li><hr>
+						<li>1/2 vaso de Vino tinto y otro de vino blanco</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se doran los ajos y la cebolla con un poco de aceite, y una vez dorados se retiran y en ese aceite se sella la carne.</li><br>
+						<li>Se añade vino tinto y vino blanco y el laurel y se dejan al fuego hasta que se evapore.</li><br>
+						<li>Se mete en el horno con un poquito de agua una media hora.</li><br>
+						<li>Se ponen alrededor unas patatas cocidas previamente doradas con sal, avecrem, ajo en polvo y perejil.</li>
+					</ul>
+					</div>
+				
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador24").click(function(){
+								console.log("click")
+								
+							$("#LomoHorno").slideToggle(1500)
+						});
+						});
+					</script>
+				</div>
+			</div>
+
+	</body>
+</html>

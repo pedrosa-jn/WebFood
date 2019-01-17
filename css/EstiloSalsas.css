@@ -1,0 +1,283 @@
+*{box-sizing: border-box; margin: 0;}
+
+/* ----------------------/*Navegador Barra----------------*/
+	nav.Navegador{
+		height: 60px; 
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #1b1e2f61;
+		color: white;
+		font-family: 'Unica One', cursive;
+	    position: fixed;
+	    top: 0;
+	    z-index: 10;
+	    width: 100%;
+	    visibility: hidden;
+
+		}
+		nav.Navegador ul{
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			display: flex;
+		}
+		nav.Navegador ul li{
+			display: inline;
+			padding: 0 35px;
+			}
+			li{
+				font-size: 20px; 
+			}
+			li>a>img{
+				margin-bottom: -11px;
+			}
+		nav.Navegador ul li a{
+			text-decoration: none;
+			color: white;
+		}
+
+	/*------------Icono Menu Mobile-----------*/
+		.Menu{
+			width: 60px;
+			height: 50px;
+			visibility: hidden;
+		    position: absolute;
+    		right: 25px;
+    		top: 25px;
+			}
+			#barra1{
+				background-color: #ffffff00;
+				width: 100%;
+				height: 7px;
+				border-radius: 3px;
+				transform-origin: left;
+				
+			}
+				#barra2{
+				background-color: #ffffff00;
+				width: 100%;
+				height: 7px;
+				border-radius: 3px;
+				margin: 24% 0;
+			}
+				#barra3{
+				background-color: #ffffff00;
+				width: 100%;
+				height: 7px;
+				border-radius: 3px;
+				transform-origin: left;
+
+			}
+			body.Abierto{overflow-y: hidden;}
+			nav.Navegador ul.Abierto{overflow-y: scroll;height: 100%;}
+			.Menu.Abierto{
+				position: fixed;
+			}
+			.Menu.Abierto #barra1{
+				transform: rotate(45deg);
+			}
+			.Menu.Abierto #barra2{
+				background-color: #00000000;
+				width: 0;
+			}
+			.Menu.Abierto #barra3{
+				transform: rotate(-45deg);
+			}
+
+.Transitions{
+	transition-property: all;
+	transition-duration: 1s;
+	transition-delay: .3s;
+	backface-visibility: hidden;
+}
+
+section{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 100%;
+	background-image: url(../Img/Kitchen.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	padding: 0 70px;
+	}
+	section #Velo{
+		width: 100%;
+		height: 100%;
+		background-color: #332c205e;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	section #Titulo{
+		height: 100vh;
+		z-index: 10;
+		margin: 0;
+		display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+		}
+		#Titulo img{
+		width: 200px;
+		transform: rotateY(270deg);
+		margin-bottom: 10px;
+
+
+		animation-name: titleImg;
+		animation-duration: 1.5s;
+		animation-delay: .5s;
+		animation-fill-mode: both;
+		}
+		@keyframes titleImg {
+		0%{opacity: 0;}
+		100%{opacity: 1; transform: rotateY(0deg);}
+		}
+		#Titulo span{
+	    width: 100%;
+	    float: left;
+	    color: white;
+	    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+	    transform: translateY(-50px);
+    	opacity: 0;
+
+        animation-name: titleText;
+    	animation-timing-function:ease;
+    	animation-duration: 1s;
+    	animation-fill-mode: both;
+		}
+		h3 span{
+		font-family: 'Unica One', cursive;
+		font-size: 50px;
+	    text-align: center;
+	    color: white;
+		animation-delay: 0.6s;
+		animation-fill-mode: both;
+		}
+		@keyframes titleText {
+    	0% {transform: translateY(-50px); opacity: 0;
+     	clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);}
+		100% {transform: translateY(0); opacity: 1;
+	    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);}    
+		}
+	section #Titulo #back{
+		position: absolute;
+		top: 0;
+		left: 35px;
+		font-size: 125px;
+		font-family: 'Staatliches', cursive;
+		color: white;
+	}
+	section .Fila{
+		display: flex;
+		justify-content: space-evenly;
+		align-items: flex-start;
+		width: 100%;
+		z-index: 10;
+	}
+	section .Receta{
+		font-family: 'Unica One', cursive;
+		background-color: #ffffffd8;
+		width: 600px;
+		border: 1px solid black;
+		border-radius: 15px;
+		margin-bottom: 85px;
+		}
+		.Receta h2{margin: 10px;cursor: default;}
+		.Receta .Descripcion{
+			width: 100%;
+			display: none;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+		}
+		.Receta .Descripcion ul.Ingredientes{
+			list-style-type: none;
+			padding: 0;
+			margin: 10px 10px;
+		}
+		.Receta .Descripcion ul.Elaboraciones{
+			font-family: 'Maven Pro', sans-serif;
+			list-style-type: upper-roman;
+			padding: 0 15px;
+			margin: 10px 10px;
+		}
+		.Receta .Descripcion#Bechamel ul.Elaboraciones{
+			margin: 10px 20px;
+		}
+		.Receta#Vacio{border: 0;}
+
+/*Media Querys Mobile: Width < 576px*/
+	@media screen and (max-width: 576px){
+	nav.Navegador{
+		align-items: flex-start;
+		background: 0;
+    	position: absolute;
+    	top: 0px;
+    	width: 100%;
+    	visibility: visible;
+	    }
+	    nav.Navegador ul{
+	    	display: none;
+			flex-direction: column;
+			line-height: 4;
+			color: white;
+			width: 100%;
+		    padding-top: 30%;
+	    	padding-bottom: 20%;
+	    	background-color: #7ab9abe0;	
+	    	position: fixed;
+	    	z-index: 10;
+	    }
+		nav.Navegador ul li{
+		    text-align: center;
+	    	font-size: 30px;
+	    	display: block;
+	    	border: 0;
+	    	margin-bottom: 25px;
+			}
+			.Navegador li #Home{justify-content: center;height: 65px;font-family:'Unica One', cursive;}
+			.Navegador li a+hr{margin-bottom: 25px;border-color:white;}
+			.Navegador li>hr{margin-bottom: 0;}
+		nav.Navegador .EnlaceMenu{
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			align-items: center;
+			}
+			.EnlaceMenu img{width: 100px; margin-right: 20px;}
+		.Menu{
+			visibility: visible;
+			position: fixed;
+			z-index: 10;
+			}
+
+			#barra1{
+				background-color: white;
+				box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+			}
+			#barra2{
+				background-color: white;
+				box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+			}
+			#barra3{
+				background-color: white;
+				box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+				}
+
+	section{
+		z-index: 1; height: 100%; padding: 0 20px;
+		}
+		section #Titulo h3{margin-bottom: 30px;}
+		section #Titulo span{font-size: 35px;}
+		section #Titulo img{width: 150px;}
+		section #Titulo a{display: none;}
+		section .Fila{flex-direction: column;}
+		section .Receta{width: 100%; margin-bottom: 85px;}
+		section .Receta li{font-size: 17px;}
+
+

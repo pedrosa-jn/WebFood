@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Recetas</title>
-	<link rel="stylesheet" type="text/css" href="./css/Estilos.css">
+	<link rel="stylesheet" type="text/css" href="./css/EstiloIndex.css">
 	<link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no">
@@ -10,38 +10,11 @@
 </head>
 <body>
 
-		<nav class="Navegador">
-			<ul>
-				<li><a class="EnlaceMenu" href="./salsas.html"><img src="./Img/IconSalsa.png">Salsas</a></li>
-				<li><a class="EnlaceMenu" href="./ensaladas.html"><img src="./Img/IconEnsalada.png">Ensaladas</a></li>
-				<li><a class="EnlaceMenu" href="./guisos.html"><img src="./Img/IconGuiso.png">Guisos</a></li>
-				<li><a class="EnlaceMenu" href="./pastas.html"><img src="./Img/IconPasta.png">Pasta</a></li>
-				<li><a class="EnlaceMenu" href="../Ensaladas/ensaladas/Mobile.html"><img src="./Img/IconCarne.png">Carne</a></li>
-				<li><a class="EnlaceMenu" href="../Ensaladas/ensaladas/Mobile.html"><img src="./Img/IconPollo.png">Pollo</a></li>
-				<li><a class="EnlaceMenu" href="../Ensaladas/ensaladas/Mobile.html"><img src="./Img/IconPescado.png">Pesccado</a></li>
-				<li><a class="EnlaceMenu" href="../Ensaladas/ensaladas/Mobile.html"><img src="./Img/IconOtros.png">Otros</a></li>
-				<li><a class="EnlaceMenu" href="../Ensaladas/ensaladas/Mobile.html"><img src="./Img/IconPostre.png">Postres</a></li>
-			</ul>
-			<div class="Menu Transitions">
-					<div class="Transitions" id="barra1"></div>
-					<div class="Transitions" id="barra2"></div>
-					<div class="Transitions" id="barra3"></div>
-			</div>
-
-			<script type="text/javascript">
-				$ (function(){
-					$(".Menu").click(function(){
-						console.log("click")
-						
-					$("nav.Navegador ul").slideToggle(2000)
-					$(".Menu,body,ul").toggleClass("Abierto")
-				});
-				});
-			</script>
-		</nav>
-
 	<header>
 			<video autoplay loop muted src="./Vid/Ingredients.mp4"></video>
+
+			<img id="Firma" src="./Img/Firma.png">
+
 			<div id="velo"></div>
 
 			<div class="TextosHeader">
@@ -66,14 +39,13 @@
 						<h4>Leer Recetas</h4>
 					</div></a>
 				</div>
-
 			</div>
 			<div class="Caja"  id="ensaladas">
 				<div class="velo"></div>
 				<img class="Pre Transitions" src="./Img/TitEns.png">
 				<div class="Pos Transitions">
-					<a href="./En/ensaladas.html"><img src="./Img/IconEnsalada.png"></a>
-					<a href="./En/ensaladas.html"><div class="SaberMas">
+					<a href="./ensaladas.html"><img src="./Img/IconEnsalada.png"></a>
+					<a href="./ensaladas.html"><div class="SaberMas">
 						<h4>Leer Recetas</h4>
 					</div></a>
 				</div>
@@ -104,20 +76,20 @@
 				<div class="velo"></div>
 				<img class="Pre Transitions" src="./Img/TitCar.png">
 				<div class="Pos Transitions">
-					<img src="./Img/IconCarne.png">
-					<div class="SaberMas">
+					<a href="./carnes.html"><img src="./Img/IconCarne.png"></a>
+					<a href="./carnes.html"><div class="SaberMas">
 						<h4>Leer Recetas</h4>
-					</div>
+					</div></a>
 				</div>
 			</div>
 			<div class="Caja"  id="pollos">
 				<div class="velo"></div>
 				<img class="Pre Transitions" src="./Img/TitPol.png">
 				<div class="Pos Transitions">
-					<img src="./Img/IconPollo.png">
-					<div class="SaberMas">
+					<a href="./pollos.html"><img src="./Img/IconPollo.png"></a>
+					<a href="./pollos.html"><div class="SaberMas">
 						<h4>Leer Recetas</h4>
-					</div>
+					</div></a>
 				</div>
 			</div>
 		</div>
@@ -126,39 +98,55 @@
 				<div class="velo"></div>
 				<img class="Pre Transitions" src="./Img/TitPes.png">
 				<div class="Pos Transitions">
-					<img src="./Img/IconPescado.png">
-					<div class="SaberMas">
+					<a href="./pescados.html"><img src="./Img/IconPescado.png"></a>
+					<a href="./pescados.html"><div class="SaberMas">
 						<h4>Leer Recetas</h4>
-					</div>
+					</div></a>
+				</div>
+			</div>
+			<div class="Caja" id="huevos">
+				<div class="velo"></div>
+				<img class="Pre Transitions" src="./Img/TitHue.png">
+				<div class="Pos Transitions">
+					<a href="./huevos.html"><img src="./Img/IconHuevo.png"></a>
+					<a href="./huevos.html"><div class="SaberMas">
+						<h4>Leer Recetas</h4>
+					</div></a>
 				</div>
 			</div>
 			<div class="Caja"  id="otros">
 				<div class="velo"></div>
 				<img class="Pre Transitions" src="./Img/TitOtr.png">
 				<div class="Pos Transitions">
-					<img src="./Img/IconOtros.png">
-					<div class="SaberMas">
+					<a href="./otros.html"><img src="./Img/IconOtros.png"></a>
+					<a href="./otros.html"><div class="SaberMas">
 						<h4>Leer Recetas</h4>
-					</div>
+					</div></a>
 				</div>
 			</div>
+		</div>
+		<div class="Fila">
 			<div class="Caja"  id="postres">
 				<div class="velo"></div>
 				<img class="Pre Transitions" src="./Img/TitPos.png">
 				<div class="Pos Transitions">
-					<img src="./Img/IconPostre.png">
-					<div class="SaberMas">
+					<a href="./postres.html"><img src="./Img/IconPostre.png"></a>
+					<a href="./postres.html"><div class="SaberMas">
 						<h4>Leer Recetas</h4>
-					</div>
+					</div></a>
 				</div>
 			</div>
-		</div>		
+			<div class="Caja"  id="Vacio">
+			</div>
+			<div class="Caja"  id="Vacio">
+			</div>
+		</div>	
 	</section>
 
 	<footer>
 		<video autoplay loop muted src="./Vid/GasStove.mp4"></video>
 		<div id="velo"></div>
-		<img src="./Img/Firma.png">
+		
 	</footer>
 
 </body>
