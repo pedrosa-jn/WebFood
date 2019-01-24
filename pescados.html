@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pescados</title>
+		<link rel="shortcut icon" href="./Img/IconPescado.png"/>
+		<link rel="stylesheet" type="text/css" href="./css/EstiloPescados.css">
+		<link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	</head>
+	<body>
+
+		<nav class="Nav Transition">
+
+			<video autoplay loop muted src="./Vid/OnlineInk.mp4"></video>
+
+
+			<ul>
+				<li id="Home"><hr><a class="EnlaceMenu" href="./index.html">Home</a><hr></li>
+				<li id="Salsas"><a class="EnlaceMenu" href="./salsas.html">Salsas</a><img src="./Img/MenuSalsa.png"></li>
+				<li id="Ensaladas"><a class="EnlaceMenu" href="./ensaladas.html">Ensaladas</a><img src="./Img/MenuEnsalada.png"></li>
+				<li id="Guisos"><a class="EnlaceMenu" href="./guisos.html">Guisos</a><img src="./Img/MenuGuiso.png"></li>
+				<li id="Pasta"><a class="EnlaceMenu" href="./pastas.html">Pasta</a><img src="./Img/MenuPasta.png"></li>
+				<li id="Pollo"><a class="EnlaceMenu" href="./pollos.html">Pollo</a><img src="./Img/MenuPollo.png"></li>
+				<li id="Carne"><a class="EnlaceMenu" href="./carnes.html">Carne</a><img src="./Img/MenuCarne.png"></li>
+				<li id="Huevo"><a class="EnlaceMenu" href="./huevos.html">Huevo</a><img src="./Img/MenuHuevo.png"></li>
+				<li id="Otros"><a class="EnlaceMenu" href="./otros.html">Otros</a><img src="./Img/MenuOtros.png"></li>
+				<li id="Postres"><a class="EnlaceMenu" href="./postres.html">Postres</a><img src="./Img/MenuPostre.png"></li>
+			</ul>
+
+
+			<div class="MenuIcon">
+				<div class="Transition" id="Barra1"></div>
+				<div class="Transition" id="Barra2"></div>
+				<div class="Transition" id="Barra3"></div>	
+			</div>
+
+			<script type="text/javascript">
+				$ (function(){
+					$(".MenuIcon").click(function(){
+						console.log("click")
+						
+					$(".MenuIcon,.Nav,body").toggleClass("Abierto")
+				});
+				});
+			</script>
+		</nav>
+
+		<section><div id="Velo"></div>
+			
+			<div id="Titulo">
+				<a href="./index.html"><div id="back"><</div></a>
+				<img src="./Img/IconPescado.png">
+				<h3>
+					<span>Pescados</span>
+		    	</h3>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador1">Pescado Frito</h2>
+					<div class="Descripcion" id="PescadoFrito">
+					<ul class="Ingredientes">
+						<li>Cualquier pescado troceado o boquerones, bacaladillas, pijotas, calamares …</li><hr>
+						<li>Sal</li><hr>
+						<li>Harina preferiblemente de pescado</li><hr>
+						<li>Aceite</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se lava bien el pescado y se sala.</li><br>
+						<li>Se pone el aceite a calentar.</li><br>
+						<li>Se enharina el pescado y cuando el aceite esté muy caliente se va echando el pescado en la sartén o freidora.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador1").click(function(){
+								console.log("click")
+								
+							$("#PescadoFrito").slideToggle(1500)
+						});
+						});
+					</script>
+
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador2">Salmón a la naranja de Mariano</h2>
+					<div class="Descripcion" id="SalmonMariano">
+					<ul class="Ingredientes">
+						<li>Salmón fresco cortado en lonchas finas</li><hr>
+						<li>1 cebolla</li><hr>
+						<li>Una naranja</li><hr>
+						<li>Sal y Aceite</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se pocha/fríe  la cebolla a fuego lento hasta que esté blandita pero no dorada.</li><br>
+						<li>En esa sartén se añade el salmón y se mezcla todo bien.</li><br>
+						<li>Se añade el zumo de una naranja y se tiene cociendo a fuego lento 15 minutos hasta que la naranja se consuma.</li><br>
+						<li>Se sirve acompañado de unas patatitas cocidas.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador2").click(function(){
+								console.log("click")
+								
+							$("#SalmonMariano").slideToggle(1500)
+						});
+						});
+					</script>
+
+				</div>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador3">Calamares en Salsa de la Abuela Carmen</h2>
+					<div class="Descripcion" id="CalamaresSalsa">
+					<ul class="Ingredientes">
+						<li>2Kg de calamares</li><hr>
+						<li>Cebolla</li><hr>
+						<li>1 tomate (opcional)</li><hr>
+						<li>1 pimiento verde (opcional)</li><hr>
+						<li>Aceite</li><hr>
+						<li>Un vaso de vino blanco</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se limpian bien los calamares quitando la piel y el interior.Se le da la vuelta y se lava bien bajo el grifo.</li><br>
+						<li>Se trocean y se salan.</li><br>
+						<li>Se hace un sofrito con la cebolla muy picada, (el tomate y el pimiento) y cuando esté dorada se echan los calamares y el vino y se tienen cociendo un ratito.</li><br>
+						<li>Si está flojo de sabor, se puede añadir un chorreón de tomate frito.</li><br>
+						<li>Se pueden servir con arroz blanco o patatas fritas.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador3").click(function(){
+								console.log("click")
+								
+							$("#CalamaresSalsa").slideToggle(1500)
+						});
+						});
+					</script>
+
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador4">Calamares en su Tinta</h2>
+					<div class="Descripcion" id="CalamaresTinta">
+					<ul class="Ingredientes">
+						<li>1kg de calamares</li><hr>
+						<li>1 cebolla grande</li><hr>
+						<li>3 dientes de ajo</li><hr>
+						<li>1/2 vaso de vino</li><hr>
+						<li>Una hoja de laurel</li><hr>
+						<li>Una bolsa de tinta (se pide en la pescadería)</li>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se limpian bien los calamares (ver receta anterior) y se trocean.</li><br>
+						<li>Se hace un sofrito con la cebolla muy picada y el ajo y cuando esté dorada se echan los calamares, una hoja de laurel y el vino y se tienen cociendo unos 10 minutos hasta que se consuma el vino.</li><br>
+						<li>Se mete todo en la olla con dos tazas de agua durante 10 minutos.</li><br>
+						<li>Se abre la olla y se añade un chorreón de tomate frito y la tinta.</li><br>
+						<li>Si se queda muy clara la salsa se le añade un poco de harina y se deja cocer unos 5 minutos y se rectifica de sal.</li><br>
+						<li>Se sirve con arroz blanco.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador4").click(function(){
+								console.log("click")
+								
+							$("#CalamaresTinta").slideToggle(1500)
+						});
+						});
+					</script>
+
+				</div>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador5">Dorada a la Espalda</h2>
+					<div class="Descripcion" id="DoradaEspalda">
+					<ul class="Ingredientes">
+						<li>Una lubina o dorada para dos personas</li><hr>
+						<li>Ajo</li><hr>
+						<li>Sal</li><hr>
+						<li>Vinagre</li><hr>
+						<li>Aceite</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se sala el pescado.</li><br>
+						<li>Se precalienta el horno.</li><br>
+						<li>Se pone el pescado en una fuente y se añade aceite por encima.</li><br>
+						<li>Se mete en el horno unos 15 minutos.</li><br>
+						<li>Mientras se fríen varios dientes de ajo en la sartén con un par de cucharadas de aceite.</li>
+						<li>Cuando estén dorados los ajos echamos un chorreón de vinagre con cuidado de que no nos salte el aceite y dejamos un par de minutos en el fuego cubiertos con una tapa.</li><br>
+						<li>Sacar el pescado del horno y añadir por encima el contenido de la sartén.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador5").click(function(){
+								console.log("click")
+								
+							$("#DoradaEspalda").slideToggle(1500)
+						});
+						});
+					</script>
+
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador6">Pescado Dominga</h2>
+					<div class="Descripcion" id="Dominga">
+					<ul class="Ingredientes">
+						<li>Una pescada</li><hr>
+						<li>3 o 4 patatas</li><hr>
+						<li>La raspa y cabeza de la pescada</li><hr>
+						<li>1 cebolla</li><hr>
+						<li>Avecrem</li><hr>
+						<li>Perejil</li><hr>
+						<li>Aceite</li><hr>
+						<li>Vino Blanco</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se fríen las patatas con la cebolla cortada en tiras.</li><br>
+						<li>Se cuece la raspa y la cabeza.</li><br>
+						<li>Se pone en una fuente las patatas con la  cebolla, la pescada, avecrem, perejil, el aceite de freír las patatas y el vino blanco.</li><br>
+						<li>Justo antes de comer se le echa el caldo de cocer la raspa y se cuece un ratito.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador6").click(function(){
+								console.log("click")
+								
+							$("#Dominga").slideToggle(1500)
+						});
+						});
+					</script>
+
+				</div>	
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador7">Merluza al Horno</h2>
+					<div class="Descripcion" id="MerluzaHorno">
+					<ul class="Ingredientes">
+						<li>Una merluza o cualquier otro pescado</li><hr>
+						<li>Patatas</li><hr>
+						<li>Aceite</li><hr>
+						<li>Limón</li><hr>
+						<li>Avecrem</li><hr>
+						<li>Vino</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se limpia el pescado y se sala.</li><br>
+						<li>Se unta la bandeja del horno con aceite.</li><br>
+						<li>Se frien un poco las patatas y una vez fritas se ponen en la fuente.</li><br>
+						<li>Se pone el pescado en la fuente sobre las patatas y se echa el zumo de limón, aceite y vino además de 1/2 pastilla de avecrem.</li><br>
+						<li>Se mete en el horno no más de 30 minutos.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador7").click(function(){
+								console.log("click")
+								
+							$("#MerluzaHorno").slideToggle(1500)
+						});
+						});
+					</script>
+
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador8">Pescado al Horno</h2>
+					<div class="Descripcion" id="PescadoHorno">
+					<ul class="Ingredientes">
+						<li>Pescado</li><hr>
+						<li>Patatas</li><hr>
+						<li>Aceite</li><hr>
+						<li>Limón</li><hr>
+						<li>Vino</li><hr>
+						<li>Avecrem</li><hr>
+						<li>Sal y ajo</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se limpia el pescado y se sala y se le mete dentro un trozo de tomate partido.</li><br>
+						<li>Se hace un par de rajas en el lomo del pescado y se mete un gajo de limón en cada una de ellas.</li><br>
+						<li>Se unta la bandeja del horno con aceite.</li><br>
+						<li>Se frien un poco las patatas con la cebolla cortada en gajos y una vez fritas se ponen en la fuente.</li><br>
+						<li>Se pone el pescado en la fuente sobre las patatas y se echa el zumo de limón, tres dientes de ajo picados, aceite perejil.</li><br>
+						<li>Se mete en el horno no más de 30 minutos.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador8").click(function(){
+								console.log("click")
+								
+							$("#PescadoHorno").slideToggle(1500)
+						});
+						});
+					</script>
+
+				</div>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador9">Pescado al Horno de Ana</h2>
+					<div class="Descripcion" id="PesHornoAna">
+					<ul class="Ingredientes">
+						<li>Pescado</li><hr>
+						<li>1 cebolla</li><hr>
+						<li>Una cucharada de tomate frito</li><hr>
+						<li>Vino blanco</li><hr>
+						<li>Pimienta</li><hr>
+						<li>Avecrem de pescado</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se sofrie la cebolla y se pasa por la batidora.</li><br>
+						<li>Se sala el pescado y se pone en la fuente.</li><br>
+						<li>Echamos la salsa por encima, una cucharada de tomate frito sobre cada trozo de pescado.</li><br>
+						<li>Se mete en el horno 20 minutos a 200 ºC.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador9").click(function(){
+								console.log("click")
+								
+							$("#PesHornoAna").slideToggle(1500)
+						});
+						});
+					</script>
+
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador10">Lubina al Horno</h2>
+					<div class="Descripcion" id="LubinaHorno">
+					<ul class="Ingredientes">
+						<li>3 Lubinas hermosas</li><hr>
+						<li>1 patata</li><hr>
+						<li>1 cebolla</li><hr>
+						<li>1 pimiento verde</li><hr>
+						<li>1 limón</li><hr>
+						<li>1 Tomate hermoso</li><hr>
+						<li>Sal y orégano</li><hr>
+						<li>Pimienta de molinillo (4 pimientas)</li><hr>
+						<li>1 vaso vino blanco</li><hr>
+						<li>1 vaso agua</li><hr>
+						<li>1/2 vaso de aceite</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Precalentar el horno a 180º</li><br>
+						<li>Partimos la cebolla en juliana y formamos una cama esparciéndola por la bandeja.</li><br>
+						<li>Hacemos lo mismo con el pimiento la patata y el tomate, éstos últimos en rodajitas.</li><br>
+						<li>En un frasco mezclamos y agitamos, el aceite, el agua, la sal (al gusto), el orégano y el vino. Lo vertemos por la bandeja regando las verduras.</li><br>
+						<li>Ponemos la bandeja al horno unos 10 minutos.</li><br>
+						<li>Una vez metida la bandeja de las verduras en el horno nos disponemos a "arreglar" las lubinas así que cuando las compremos le decimos al pescadero que nos las arregle para horno, esto es, escamarlas y quitarles el interior.</li><br>
+						<li>Les hacemos dos hendiduras transversales (hasta la raspa) y en oblicuo (se ve mejor presentado el limón) y salpimentamos con el molinillo.</li><br>
+						<li>Transcurridos los 10 minutos abrimos el horno y extraemos la bandeja hacia fuera colocando las lubinas en ella.</li><br>
+						<li>Cerramos el horno y lo dejamos unos 20 minutos o hasta que está a nuestro gusto (hay gente que les gusta más tostada).</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador10").click(function(){
+								console.log("click")
+								
+							$("#LubinaHorno").slideToggle(1500)
+						});
+						});
+					</script>
+
+				</div>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador13">Chirlas</h2>
+					<div class="Descripcion" id="Chirlas">
+					<ul class="Ingredientes">
+						<li>1Kg de chirlas (previamente puestas en remojo en agua con sal para que suelten la arena)</li><hr>
+						<li>4 o 5 dientes de ajo</li><hr>
+						<li>Un vaso de vino blanco</li><hr>
+						<li>Aceite</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se ponen los ajos picados en el aceite caliente y justo antes de que se doren se añaden las chirla  con sal.</li><br>
+						<li>Cuando se han abierto un poco se añade el vino y se dejan cocer hasta que se abren del todo y el vino se ha evaporado..</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador13").click(function(){
+								console.log("click")
+								
+							$("#Chirlas").slideToggle(1500)
+						});
+						});
+					</script>
+
+				</div>
+				<div class="Receta" id="Vacio"></div>
+			</div>
+
+
+		</section>
+
+	</body>
+</html>

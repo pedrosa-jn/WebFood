@@ -14,32 +14,36 @@
 	</head>
 
 	<body>
-		<nav class="Navegador">
+		
+		<nav class="Nav Transition">
+
+			<video autoplay loop muted src="./Vid/OnlineInk.mp4"></video>
+
 			<ul>
-				<li><hr><a class="EnlaceMenu" id="Home" href="./index.html">Home</a><hr></li>
-				<li><a class="EnlaceMenu" href="./salsas.html"><img src="./Img/IconSalsa.png">Salsas</a></li>
-				<li><a class="EnlaceMenu" href="./ensaladas.html"><img src="./Img/IconEnsalada.png">Ensaladas</a></li>
-				<li><a class="EnlaceMenu" href="./guisos.html"><img src="./Img/IconCarne.png">Guisos</a></li>
-				<li><a class="EnlaceMenu" href="./pastas.html"><img src="./Img/IconPasta.png">Pasta</a></li>
-				<li><a class="EnlaceMenu" href="./pollos.html"><img src="./Img/IconPollo.png">Pollo</a></li>
-				<li><a class="EnlaceMenu" href="./huevos.html"><img src="./Img/IconHuevo.png">Huevo</a></li>
-				<li><a class="EnlaceMenu" href="./pescados.html"><img src="./Img/IconPescado.png">Pesccado</a></li>
-				<li><a class="EnlaceMenu" href="./otros.html"><img src="./Img/IconOtros.png">Otros</a></li>
-				<li><a class="EnlaceMenu" href="./postres.html"><img src="./Img/IconPostre.png">Postres</a></li>
+				<li id="Home"><hr><a class="EnlaceMenu" href="./index.html">Home</a><hr></li>
+				<li id="Salsas"><a class="EnlaceMenu" href="./salsas.html">Salsas</a><img src="./Img/MenuSalsa.png"></li>
+				<li id="Ensaladas"><a class="EnlaceMenu" href="./ensaladas.html">Ensaladas</a><img src="./Img/MenuEnsalada.png"></li>
+				<li id="Guisos"><a class="EnlaceMenu" href="./guisos.html">Guisos</a><img src="./Img/MenuGuiso.png"></li>
+				<li id="Pasta"><a class="EnlaceMenu" href="./pastas.html">Pasta</a><img src="./Img/MenuPasta.png"></li>
+				<li id="Pollo"><a class="EnlaceMenu" href="./pollos.html">Pollo</a><img src="./Img/MenuPollo.png"></li>
+				<li id="Huevo"><a class="EnlaceMenu" href="./huevos.html">Huevo</a><img src="./Img/MenuHuevo.png"></li>
+				<li id="Pescado"><a class="EnlaceMenu" href="./pescados.html">Pesccado</a><img src="./Img/MenuPescado.png"></li>
+				<li id="Otros"><a class="EnlaceMenu" href="./otros.html">Otros</a><img src="./Img/MenuOtros.png"></li>
+				<li id="Postres"><a class="EnlaceMenu" href="./postres.html">Postres</a><img src="./Img/MenuPostre.png"></li>
 			</ul>
-			<div class="Menu Transitions">
-					<div class="Transitions" id="barra1"></div>
-					<div class="Transitions" id="barra2"></div>
-					<div class="Transitions" id="barra3"></div>
+
+			<div class="MenuIcon">
+				<div class="Transition" id="Barra1"></div>
+				<div class="Transition" id="Barra2"></div>
+				<div class="Transition" id="Barra3"></div>	
 			</div>
 
 			<script type="text/javascript">
 				$ (function(){
-					$(".Menu").click(function(){
+					$(".MenuIcon").click(function(){
 						console.log("click")
 						
-					$("nav.Navegador ul").slideToggle(2000)
-					$(".Menu,body,ul").toggleClass("Abierto")
+					$(".MenuIcon,.Nav,body").toggleClass("Abierto")
 				});
 				});
 			</script>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Huevo</title>
+		<link rel="shortcut icon" href="./Img/IconHuevo.png"/>
+		<link rel="stylesheet" type="text/css" href="./css/EstiloHuevos.css">
+		<link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	</head>
+	<body>
+
+		<nav class="Nav Transition">
+
+			<video autoplay loop muted src="./Vid/OnlineInk.mp4"></video>
+
+			<ul>
+				<li id="Home"><hr><a class="EnlaceMenu" href="./index.html">Home</a><hr></li>
+				<li id="Salsas"><a class="EnlaceMenu" href="./salsas.html">Salsas</a><img src="./Img/MenuSalsa.png"></li>
+				<li id="Ensaladas"><a class="EnlaceMenu" href="./ensaladas.html">Ensaladas</a><img src="./Img/MenuEnsalada.png"></li>
+				<li id="Guisos"><a class="EnlaceMenu" href="./guisos.html">Guisos</a><img src="./Img/MenuGuiso.png"></li>
+				<li id="Pasta"><a class="EnlaceMenu" href="./pastas.html">Pasta</a><img src="./Img/MenuPasta.png"></li>
+				<li id="Carne"><a class="EnlaceMenu" href="./carnes.html">Carne</a><img src="./Img/MenuCarne.png"></li>
+				<li id="Pollo"><a class="EnlaceMenu" href="./pollos.html">Pollo</a><img src="./Img/MenuPollo.png"></li>
+				<li id="Pescado"><a class="EnlaceMenu" href="./pescados.html">Pesccado</a><img src="./Img/MenuPescado.png"></li>
+				<li id="Otros"><a class="EnlaceMenu" href="./otros.html">Otros</a><img src="./Img/MenuOtros.png"></li>
+				<li id="Postres"><a class="EnlaceMenu" href="./postres.html">Postres</a><img src="./Img/MenuPostre.png"></li>
+			</ul>
+
+			<div class="MenuIcon">
+				<div class="Transition" id="Barra1"></div>
+				<div class="Transition" id="Barra2"></div>
+				<div class="Transition" id="Barra3"></div>	
+			</div>
+
+			<script type="text/javascript">
+				$ (function(){
+					$(".MenuIcon").click(function(){
+						console.log("click")
+						
+					$(".MenuIcon,.Nav,body").toggleClass("Abierto")
+				});
+				});
+			</script>
+		</nav>
+
+		<section><div id="Velo"></div>
+			
+			<div id="Titulo">
+				<a href="./index.html"><div id="back"><</div></a>
+				<img src="./Img/IconHuevo.png">
+				<h3>
+					<span>Huevo</span>
+		    	</h3>
+			</div>
+
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador1">Huevos Rellenos</h2>
+					<div class="Descripcion" id="HuevosRellenos">
+					<ul class="Ingredientes">
+						<li>1 huevo por persona</li><hr>
+						<li>Atún</li><hr>
+						<li>Mayonesa</li><hr>
+						<li>Leche</li><hr>
+						<li>Tomate</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>En un cazo ponemos agua a hervir con sal.</li><br>
+						<li>Cuando hierva añadimos los huevos y los dejamos hervir durante unos 15 minutos.</li><br>
+						<li>Pasado este tiempo los retiramos del fuego y los dejamos enfriar.</li><br>
+						<li>Una vez fríos, los pelamos y abrimos por la mitad.</li><br>
+						<li>Retiramos las yemas y las ponemos en un bol junto con el atún, un chorrito de leche y otro de tomate. Reservamos una para decorar.</li><br>
+						<li>Mezclamos y rellenamos los huevos con esta pasta.</li><br>
+						<li>Preparamos un poco de mayonesa y cubrimos los huevos con ella.</li><br>
+						<li>Se ralla la yema de huevo reservada por encima y se decoran con aceitunas, pimiento rojo…</li><br>
+						<li>Se mete en la nevera y se deja enfriar.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador1").click(function(){
+								console.log("click")
+								
+							$("#HuevosRellenos").slideToggle(1500)
+						});
+						});
+					</script>
+
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador2">Huevos al Plato</h2>
+					<div class="Descripcion" id="HuevosPlato">
+					<ul class="Ingredientes">
+						<li>1 huevo por persona</li><hr>
+						<li>Tomate frito</li><hr>
+						<li>Chorizo picado, jamón, patatas fritas en cuadraditos, guisantes…</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>En una cazuela de barro se pone un fondo de aceite, tomate frito y se casca un huevo por persona.</li><br>
+						<li>Se añade a un lado la guarnición y se mete en el horno con el fuego solo por abajo hasta que se cuaje la yema.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador2").click(function(){
+								console.log("click")
+								
+							$("#HuevosPlato").slideToggle(1500)
+						});
+						});
+					</script>
+
+				</div>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador3">Huevos en Salsa Amarilla</h2>
+					<div class="Descripcion" id="SalsaAmarilla">
+					<ul class="Ingredientes">
+						<li>1 huevo por person</li><hr>
+						<li>Jamón picado</li><hr>
+						<li>Harina</li><hr>
+						<li>Un diente de ajo</li><hr>
+						<li>Azafrán (o colorante)</li><hr>
+						<li>Aceite</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se cuecen los huevos durante 15 minutos y se dejan enfriar.</li><br>
+						<li>Cuando estén fríos se pelan y se les saca la yema.</li><br>
+						<li>Se hace una masa con con la yema, el jamón y un poquito de leche.</li><br>
+						<li>Se cortan los huevos por la mitad y se rellenan con la masa anterior.</li><br>
+						<li>Se pasan los huevos por harina y se fríen en aceite.</li><br>
+						<li>Una vez fritos se reservan.</li><br>
+						<li>Se majan tres dientes de ajo en el mortero con sal y un poquito de agua.</li><br>
+						<li>En una olla o fuente de barro se pone un poco de aceite y el diente de ajo machacado. </li><br>
+						<li>Se añade agua como hasta la mitad de la cacerola, un trozo de jamón o tocino y cuando hierve se ponen los huevos con azafrán y se añade un poco del aceite de freírlos.</li><br>
+						<li>Se tienen cociendo un ratito.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador3").click(function(){
+								console.log("click")
+								
+							$("#SalsaAmarilla").slideToggle(1500)
+						});
+						});
+					</script>
+
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador4">Huevos con Bechamel</h2>
+					<div class="Descripcion" id="HuevosBechamel">
+					<ul class="Ingredientes">
+						<li>1 huevo duro por persona</li><hr>
+						<li>Jamón serrano picado</li><hr>
+						<li>Leche</li><hr>
+						<li>Cebolla</li><hr>
+						<li>Queso rallado</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se cuecen los huevos duros durante 15 minutos y se dejan enfriar.</li><br>
+						<li>Cuando estén fríos se pelan y se saca la yema.</li><br>
+						<li>Se hace una masa con la yema, el jamón y un poquito de leche.</li><br>
+						<li>Se cortan los huevos por la mitad por la parte más ancha y se van rellenando con la mezcla.</li><br>
+						<li>Se hace una bechamel clarita con un poco de cebolla dorada</li><br>
+						<li>Se ponen los huevos en una fuente y se vierte por encima la bechamel. Se espolvorea con el queso rallado y se gratina en el horno.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador4").click(function(){
+								console.log("click")
+								
+							$("#HuevosBechamel").slideToggle(1500)
+						});
+						});
+					</script>
+
+				</div>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador5">Huevos Fritos</h2>
+					<div class="Descripcion" id="HuevosFritos">
+					<ul class="Ingredientes">
+						<li>1 huevo por persona</li><hr>
+						<li>Aceite</li><hr>
+						<li>Sal</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se pone bastante aceite en una sartén y cuando esté caliente se casca un huevo y se fríe hasta que la clara esté blanca y la yema no esté muy cruda.</li><br>
+						<li>Se escurre de aceite y se pone en un plato.</li><br>
+						<li>Se sirve con patatas fritas, jamón o chorizo.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador5").click(function(){
+								console.log("click")
+								
+							$("#HuevosFritos").slideToggle(1500)
+						});
+						});
+					</script>
+
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador6">Tortilla de Patatas</h2>
+					<div class="Descripcion" id="TortillaPatatas">
+					<ul class="Ingredientes">
+						<li>5 o 6 huevos (4 personas)</li><hr>
+						<li>5 o 6 patatas</li><hr>
+						<li>Cebolla (opcional)</li>
+						<li>Aceite y Sal</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se pelan las patatas, se cortan en rodajas finitas o en cuadraditos.</li><br>
+						<li>Se salan y se fríen en abundante aceite (se puede añadir la cebolla).</li><br>
+						<li>Cuando estén doradas se sacan y se escurren bien del aceite.</li><br>
+						<li>En un bol se baten bien los huevos y se echa un poquito de sal.</li><br>
+						<li>Retiramos el aceite de freír las patatas de la sartén y dejamos un poquito que cubra el fondo.</li><br>
+						<li>Añadimos la mezcla de las patatas con el huevo y dejamos que se cuaje la mezcla un poco.</li><br>
+						<li>Con otro plato o con un vuelca tortillas le damos la vuelta y lo tenemos al fuego un poco más dependiendo de cómo nos guste la tortilla muy cuajada o poco cuajada.</li><br>
+						<li>Servir en un plato y dividir entre el número de comensales.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador6").click(function(){
+								console.log("click")
+								
+							$("#TortillaPatatas").slideToggle(1500)
+						});
+						});
+					</script>
+
+				</div>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador7">Tortilla Francesa</h2>
+					<div class="Descripcion" id="TortillaFrancesa">
+					<ul class="Ingredientes">
+						<li>1 o 2 huevos</li><hr>
+						<li>Aceite</li><hr>
+						<li>Sal</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Cubrir el fondo de una sartén con un poquito de aceite.</li><br>
+						<li>Batir un huevo con sal.</li><br>
+						<li>Al huevo se le puede añadir queso, jamón…</li>
+						<li>Cuando el aceite esté caliente, verter el huevo batido y dejar que se cuaje un poquito.</li><br>
+						<li>Con una espumadera doblar la tortilla y cuando el huevo esté cuajado servir en un plato.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador7").click(function(){
+								console.log("click")
+								
+							$("#TortillaFrancesa").slideToggle(1500)
+						});
+						});
+					</script>
+
+				</div>
+				<div class="Receta" id="Vacio"></div>
+			</div>
+
+
+		</section>
+
+	</body>
+</html>

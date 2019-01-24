@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Otros</title>
+		<link rel="shortcut icon" href="./Img/IconOtros.png"/>
+		<link rel="stylesheet" type="text/css" href="./css/EstiloOtros.css">
+		<link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	</head>
+	<body>
+
+		<nav class="Nav Transition">
+
+			<video autoplay loop muted src="./Vid/OnlineInk.mp4"></video>
+
+			<ul>
+				<li id="Home"><hr><a class="EnlaceMenu" href="./index.html">Home</a><hr></li>
+				<li id="Salsas"><a class="EnlaceMenu" href="./salsas.html">Salsas</a><img src="./Img/MenuSalsa.png"></li>
+				<li id="Ensaladas"><a class="EnlaceMenu" href="./ensaladas.html">Ensaladas</a><img src="./Img/MenuEnsalada.png"></li>
+				<li id="Guisos"><a class="EnlaceMenu" href="./guisos.html">Guisos</a><img src="./Img/MenuGuiso.png"></li>
+				<li id="Pasta"><a class="EnlaceMenu" href="./pastas.html">Pasta</a><img src="./Img/MenuPasta.png"></li>
+				<li id="Carne"><a class="EnlaceMenu" href="./carnes.html">Carne</a><img src="./Img/MenuCarne.png"></li>
+				<li id="Pollo"><a class="EnlaceMenu" href="./pollos.html">Pollo</a><img src="./Img/MenuPollo.png"></li>
+				<li id="Huevo"><a class="EnlaceMenu" href="./huevos.html">Huevo</a><img src="./Img/MenuHuevo.png"></li>
+				<li id="Pescado"><a class="EnlaceMenu" href="./pescados.html">Pesccado</a><img src="./Img/MenuPescado.png"></li>
+				<li id="Postres"><a class="EnlaceMenu" href="./postres.html">Postres</a><img src="./Img/MenuPostre.png"></li>
+			</ul>
+
+			<div class="MenuIcon">
+				<div class="Transition" id="Barra1"></div>
+				<div class="Transition" id="Barra2"></div>
+				<div class="Transition" id="Barra3"></div>	
+			</div>
+
+			<script type="text/javascript">
+				$ (function(){
+					$(".MenuIcon").click(function(){
+						console.log("click")
+						
+					$(".MenuIcon,.Nav,body").toggleClass("Abierto")
+				});
+				});
+			</script>
+		</nav>
+
+		<section><div id="Velo"></div>
+			
+			<div id="Titulo">
+				<a href="./index.html"><div id="back"><</div></a>
+				<img src="./Img/IconOtros.png">
+				<h3>
+					<span>Otros</span>
+		    	</h3>
+			</div>
+
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador1">Croquetas</h2>
+					<div class="Descripcion" id="Croquetas">
+					<ul class="Ingredientes">
+						<li>750g de leche fría</li><hr>
+						<li>4 cucharadas de harina</li><hr>
+						<li>1/2 cebolla</li><hr>
+						<li>Jamón serrano, pollo sobrante de hacer una sopa…</li><hr>
+						<li>Aceite</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se dora la cebolla y una vez dorada se echa el jamón. Se sofríe unos minutos.</li><br>
+						<li>En una cacerola aparte se pone un poco de aceite y un trozo de mantequilla (esto es opcional).</li><br>
+						<li>Se añade la harina y se sofrie un poco.</li><br>
+						<li>Añadimos la leche poco a poco y vamos moviendo bien deshaciendo grumos (si los grumos no se deshacen se bate la mezcla con la minipimer).</li><br>
+						<li>Cuando esta mezcla esté trabada, se añaden la cebolla y el jamón y se remueve todo bien durante un buen rato.</li><br>
+						<li>Cuando la masa se separe del fondo y de las paredes de la cacerola quiere decir que está lista.</li><br>
+						<li>Se vierte todo en una fuente y se deja enfriar.</li><br>
+						<li>Cuando la masa esté fría y sólida se van troceando y se pasan por huevo batido primero y luego por pan rallado.</li><br>
+						<li>Se van friendo en aceite caliente.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador1").click(function(){
+								console.log("click")
+								
+							$("#Croquetas").slideToggle(1500)
+						});
+						});
+					</script>
+
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador2">Empanadillas</h2>
+					<div class="Descripcion" id="Empanadillas">
+					<ul class="Ingredientes">
+						<li>Un paquete de obleas “La cocinera” o similar (pueden ser grandes o pequeñas al gusto)</li><hr>
+						<li>Una o dos latas de atún</li><hr>
+						<li>Cebolla</li><hr>
+						<li>Tomate frito</li><hr>
+						<li>Pimiento morrón</li><hr>
+						<li>Aceitunas</li><hr>
+						<li>Huevo duro</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>En una sartén se pone un poco de aceite (que la cubra).</li><br>
+						<li>Se pica la cebolla y se pone blanda en ese aceite sin dejar que se dore.</li><br>
+						<li>Se añade el tomate frito, unas tres o cuatro cucharadas y se sofrie todo un rato.</li><br>
+						<li>Cuando esté listo (el aceite del tomate sube a la superficie), se aparta del fuego y se mezcla en un bol con el atún bien picadito.</li><br>
+						<li>A esa mezcla le añadimos un huevo duro muy picado y pimiento rojo también muy troceado.</li><br>
+						<li>En una superficie limpia y plana extendemos las obleas sin quitarles el papel que las protege aún para evitar que se resequen.</li><br>
+						<li>Se pone una cucharada de la mezcla anterior en el centro de cada oblea y se doblan sobre sí mismas, cuidando que no se salga la masa.</li><br>
+						<li>Con un tenedor vamos sellando cada oblea presionando los bordes con las púas del tenedor.</li><br>
+						<li>Se pone bastante aceite a calentar en una sartén y se quita el papel protector y se van van friendo.</li><br>
+						<li>Se pueden cocinar también en el horno precalentado a 180 grados durante unos 10 minutos, pintandolas previamente con una yema de huevo batida.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador2").click(function(){
+								console.log("click")
+								
+							$("#Empanadillas").slideToggle(1500)
+						});
+						});
+					</script>
+
+				</div>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador3">Emparedados</h2>
+					<div class="Descripcion" id="Emparedados">
+					<ul class="Ingredientes">
+						<li>Pan de molde sin corteza</li><hr>
+						<li>Jamón york</li><hr>
+						<li>Tranchetes</li><hr>
+						<li>Huevo</li><hr>
+						<li>Leche</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se cogen varias rodajas de pan y se rellenan con jamón york y un tranchete.</li><br>
+						<li>Se cortan por la mitad.</li><br>
+						<li>En un plato se pone un poco de leche y se empapan los sándwiches en la leche.</li><br>
+						<li>Se escurren bien y luego se pasan por huevo previamente batido en un plato.</li><br>
+						<li>Mientras tanto se ha puesto bastante aceite en una sartén, y cuando esté caliente el aceite se van friendo los sandwiches.</li><br>
+						<li>Se ponen en una fuente sobre papel de cocina para que absorba el aceite y se sirve con patatas fritas o ensalada.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador3").click(function(){
+								console.log("click")
+								
+							$("#Emparedados").slideToggle(1500)
+						});
+						});
+					</script>
+
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador4">Empanada</h2>
+					<div class="Descripcion" id="Empanada">
+					<ul class="Ingredientes">
+						<li>2 láminas de hojaldre</li><hr>
+						<li>4 latas de atún de 80 gramos</li><hr>
+						<li>3 cebollas medianas</li><hr>
+						<li>1 pimiento rojo (de los gordos para asar)</li><hr>
+						<li>1 pimiento verde italiano (de los alargados para sofrito)</li><hr>
+						<li>2 tomates grandes maduros</li><hr>
+						<li>3 dientes de ajo</li><hr>
+						<li>1 cucharada pequeña de pimentón (del normal o dulce)</li><hr>
+						<li>1/2 vaso de aceite de girasol (unos 125 ml)</li><hr>
+						<li>Sal y pimienta negra molida</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Pela, limpia y trocea la cebolla y los pimientos, pela los ajos y córtalos en rodajas. Pon en una sartén el aceite y añade todo más media cuchara pequeña con sal. Deja que se pochen todas las verduras a fuego medio.</li><br>
+						<li>Mientras se pochan las verduras pela los tomates, quítales las semillas y pícalos muy finos. Cuando las verduras estén en su punto añade el pimentón (opcional), remueve durante unos segundos y añade el tomate. Deja al fuego unos 5 minutos.</li><br>
+						<li>Pon el atún a escurrir y cuando hayan pasado los 5 minutos lo añadimos al sofrito y removemos bien. Prueba de sal y si hace falta añade un poco más. Si te gusta puedes añadir una pizca de pimienta negra molida.</li><br>
+						<li>Coloca un colador sobre un bol grande y vuelca sobre el colador el sofrito. Queremos separar el aceite (para pintar luego la empanada) y que el sofrito quede menos aceitoso.</li><br>
+						<li>Deja que se enfríe el sofrito mientras escurre y luego espárcelo sobre una de las láminas de hojaldre dejando uno o dos centímetros libres por cada lado. Pon a calentar el horno a 200ºC (calor arriba y abajo).</li><br>
+						<li>Luego coloca encima la otra lámina de hojaldre y cierra los bordes apretando bien. Pincela con el aceite del sofrito la superficie de la empanada y haz una chimenea (un agujero) en el centro de la empanada para que salga el vapor.</li><br>
+						<li>Mete en el horno a 180ºC y deja durante 20 a 30 minutos o hasta que veas el hojaldre bien dorado (vigila de vez en cuando para evitar que se queme). Luego saca del horno, deja enfriar y tu empanada de atún está lista para comer.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador4").click(function(){
+								console.log("click")
+								
+							$("#Empanada").slideToggle(1500)
+						});
+						});
+					</script>
+
+				</div>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador5">Sandwich Club</h2>
+					<div class="Descripcion" id="SandwichClub">
+					<ul class="Ingredientes">
+						<li>Pan de molde (tres rebanadas por unidad)</li><hr>
+						<li>Lechuga</li><hr>
+						<li>Tomate</li><hr>
+						<li>Bacon</li><hr>
+						<li>Filetes de pechuga</li><hr>
+						<li>Mayonesa</li><hr>
+						<li>Queso en lonchas</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se tuestan un poco las rebanadas y se untan con un poquito de mayonesa.</li><br>
+						<li>Sobre una de las rebanadas de pone un poco de lechuga, varias rodajas de tomate, una loncha de queso y una de jamón york.</li><br>
+						<li>Se cubre con otra rebanada y encima ponemos otro poco de mayonesa un filete de pechuga previamente frito a la plancha y una par de lonchas de bacon también fritas.</li><br>
+						<li>Cubrimos con la tercera loncha y cortamos en cuatro triángulos.</li><br>
+						<li>Servir con patatas fritas.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador5").click(function(){
+								console.log("click")
+								
+							$("#SandwichClub").slideToggle(1500)
+						});
+						});
+					</script>
+
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador6">Paninis</h2>
+					<div class="Descripcion" id="Panini">
+					<ul class="Ingredientes">
+						<li>Pan de barra cortado como para bocadillo</li><hr>
+						<li>Tomate orlando</li><hr>
+						<li>Tranchetes o quesitos</li>
+						<li>Jamón york o atún, bacon, salchichas…</li><hr>
+						<li>Queso para gratinar</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se pone el horno a precalentar durante unos 10 minutos a unos 200 grados.</li><br>
+						<li>Mientras tanto cortamos una barra de pan o baguette en varios trozos como para bocadillo dependiendo del número de comensales.</li><br>
+						<li>Se abre cada trozo en dos mitades y se extiende tomate frito, una loncha de queso suave y encima ponemos lo que queramos: jamón york picado, atún, salchichas...y se cubre con queso rallado.</li><br>
+						<li>Se mete en la bandeja del horno y se tiene ahí unos 10-15 minutos hasta que veamos que el queso esté dorado.</li><br>
+						<li>Podemos servir acompañados de una ensalada.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador6").click(function(){
+								console.log("click")
+								
+							$("#Panini").slideToggle(1500)
+						});
+						});
+					</script>
+
+				</div>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador7">Burritos</h2>
+					<div class="Descripcion" id="Burritos">
+					<ul class="Ingredientes">
+						<li>Un paquete de burritos o tortas de maíz o trigo</li><hr>
+						<li>Una pechuga de pollo troceada</li><hr>
+						<li>Cebolla</li><hr>
+						<li>Pimiento verde y rojo</li><hr>
+						<li>Aceite y Sal</li><hr>
+						<li>Sazonador</li><hr>
+						<li>Lechuga</li><hr>
+						<li>Tomate</li><hr>
+						<li>Guacamole</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Pelamos y cortamos la cebolla en juliana (en tiras finas).</li><br>
+						<li>Cortamos el rabo y abrimos por la mitad cada pimiento eliminando las pepitas.</li><br>
+						<li>Ponemos aceite cubriendo el fondo de una sartén y cuando esté un poco caliente el aceite ponemos a dorar la verdura.</li>
+						<li>Mientras tanto cortamos la pechuga en tiras y le añadimos sal.</li><br>
+						<li>Cuando la cebolla empiece a dorarse añadimos la pechuga y la sofreímos. Luego añadimos el sazonador. Poco a poco, vamos probando hasta que nos parezca.</li><br>
+						<li>Lo tenemos unos minutos al fuego hasta que la carne esté hecha.</li><br>
+						<li>Colocamos la mezcla en una fuente.</li><br>
+						<li>Cortamos un poco de lechuga y ponemos en un bol, un tomate en troceado en otro platito o guacamole.</li><br>
+						<li>Agujereamos un poco el plástico donde están los burritos y los metemos en el microondas un par de minutos siguiendo las instrucciones del envase.</li><br>
+						<li>En cada burrito servimos un poco de la mezcla anterior, lechuga, tomate, guacamole… al gusto.</li><br>
+						<li>Enrollamos bien y están listos para comer.</li><br>
+						<li>Se puede cambiar el pollo por carne picada.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador7").click(function(){
+								console.log("click")
+								
+							$("#Burritos").slideToggle(1500)
+						});
+						});
+					</script>
+
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador8">Quiche de Jamón y Queso</h2>
+					<div class="Descripcion" id="Quiche">
+					<ul class="Ingredientes">
+						<li>Pasta de hojaldre</li><hr>
+						<li>4 huevos</li><hr>
+						<li>Queso mozzarella 200 gramos</li>
+						<li>Jamón York</li><hr>
+						<li>Leche ideal o nata</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se precalienta el horno.</li><br>
+						<li>Se cubre un molde redondo con el hojaldre y se cubre con una capa de queso, una de jamón york troceado y otra de queso.</li><br>
+						<li>Se baten los huevos con medio bote de leche Ideal o nata y se vierte sobre la mezcla anterior.</li><br>
+						<li>Se mete en el horno 200 grados arriba y abajo durante 40 minutos.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador8").click(function(){
+								console.log("click")
+								
+							$("#Quiche").slideToggle(1500)
+						});
+						});
+					</script>
+
+				</div>
+			</div>
+
+
+		</section>
+
+	</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Postre y Repostería</title>
+		<link rel="shortcut icon" href="./Img/IconPostre.png"/>
+		<link rel="stylesheet" type="text/css" href="./css/EstiloPostres.css">
+		<link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	</head>
+	<body>
+
+		<nav class="Nav Transition">
+
+			<video autoplay loop muted src="./Vid/OnlineInk.mp4"></video>
+
+			<ul>
+				<li id="Home"><hr><a class="EnlaceMenu" href="./index.html">Home</a><hr></li>
+				<li id="Salsas"><a class="EnlaceMenu" href="./salsas.html">Salsas</a><img src="./Img/MenuSalsa.png"></li>
+				<li id="Ensaladas"><a class="EnlaceMenu" href="./ensaladas.html">Ensaladas</a><img src="./Img/MenuEnsalada.png"></li>
+				<li id="Guisos"><a class="EnlaceMenu" href="./guisos.html">Guisos</a><img src="./Img/MenuGuiso.png"></li>
+				<li id="Pasta"><a class="EnlaceMenu" href="./pastas.html">Pasta</a><img src="./Img/MenuPasta.png"></li>
+				<li id="Carne"><a class="EnlaceMenu" href="./carnes.html">Carne</a><img src="./Img/MenuCarne.png"></li>
+				<li id="Pollo"><a class="EnlaceMenu" href="./pollos.html">Pollo</a><img src="./Img/MenuPollo.png"></li>
+				<li id="Huevo"><a class="EnlaceMenu" href="./huevos.html">Huevo</a><img src="./Img/MenuHuevo.png"></li>
+				<li id="Pescado"><a class="EnlaceMenu" href="./pescados.html">Pesccado</a><img src="./Img/MenuPescado.png"></li>
+				<li id="Otros"><a class="EnlaceMenu" href="./Otros.html">Otros</a><img src="./Img/MenuPostre.png"></li>
+			</ul>
+
+			<div class="MenuIcon">
+				<div class="Transition" id="Barra1"></div>
+				<div class="Transition" id="Barra2"></div>
+				<div class="Transition" id="Barra3"></div>	
+			</div>
+
+			<script type="text/javascript">
+				$ (function(){
+					$(".MenuIcon").click(function(){
+						console.log("click")
+						
+					$(".MenuIcon,.Nav,body").toggleClass("Abierto")
+				});
+				});
+			</script>
+		</nav>
+
+		<section><div id="Velo"></div>
+			
+			<div id="Titulo">
+				<a href="./index.html"><div id="back"><</div></a>
+				<img src="./Img/IconPostre.png">
+				<h3>
+					<span>Postre y Repostería</span>
+		    	</h3>
+			</div>
+
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador1">Bizcocho de Clara</h2>
+					<div class="Descripcion" id="BizcochoClara">
+					<ul class="Ingredientes">
+						<li>3 huevos</li><hr>
+						<li>2 vasos de harina</li><hr>
+						<li>1 vaso de azúcar</li><hr>
+						<li>1/2 vaso de leche relleno con aceite</li><hr>
+						<li>Un sobre de levadura</li><hr>
+						<li>Raspadura de limón</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se pone el horno a precalentar a 250 grados.</li><br>
+						<li>Se hace una mezcla con todos los ingredientes anteriores.</li><br>
+						<li>Se unta  un molde con un poco de mantequilla y se vierte la mezcla anterior.</li><br>
+						<li>Se mete en el horno y una vez que la mezcla ha subido se baja a 150 grados por arriba y por abajo unos 40 minutos controlando cada poco tiempo pinchando hasta comprobar que no está crudo.</li><br>
+						<li>En último lugar se pone el grill un poco para que se dore un poquito.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador1").click(function(){
+								console.log("click")
+								
+							$("#BizcochoClara").slideToggle(1500)
+						});
+						});
+					</script>
+
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador2">Flan de Huevo</h2>
+					<div class="Descripcion" id="FlanHuevo">
+					<ul class="Ingredientes">
+						<li>Una yema de huevo</li><hr>
+						<li>1/2 litro de leche</li><hr>
+						<li>12 cucharadas de azúcar</li><hr>
+						<li>Cáscara de limón</li><hr>
+						<li>Un palo de canela</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se hierve la leche con la canela y el limón.</li><br>
+						<li>Se mezclan todos los ingredientes en un molde caramelizado.</li><br>
+						<li>Se pone al baño maría en la olla express 12 minutos.</li><br>
+						<li>Caramelizar el molde. Se echa un poco de azúcar en el molde y se pone en el fuego o en el microondas, hasta que se vaya poniendo color caramelo (es preferible que el molde esté tapado).</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador2").click(function(){
+								console.log("click")
+								
+							$("#FlanHuevo").slideToggle(1500)
+						});
+						});
+					</script>
+
+				</div>
+			</div>
+
+		</section>
+
+	</body>
+</html>

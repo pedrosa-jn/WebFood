@@ -1,0 +1,248 @@
+*{box-sizing: border-box; margin: 0;}
+
+/* ----------------------/*Navegador Barra----------------*/
+	nav.Nav{
+		height: 100vh;
+		width: 25vw;
+		position: fixed;
+		top: 0;
+		right: -30vw;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		font-family: 'Unica One', cursive;
+		overflow: hidden;
+		z-index: 100;
+		background-color: #332c207d;
+		}
+		nav.Nav.Abierto{right: 0;box-shadow: 0px 0px 20px -4px black;}
+		body.Abierto{overflow-y: hidden;}
+
+		.Nav video{
+			height: 30%;
+			position: absolute;
+			top: 0;
+			z-index: 1;
+
+		}
+
+		.Nav ul{
+			height: 80vh;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+			padding: 0;
+			list-style-type: none;
+			overflow: hidden;
+			z-index: 1;
+			}
+			.Nav ul li{
+				height: 100%;width:
+				100%;font-size: 20px;padding: 0 30px;
+				box-shadow: 0px 2px 14px -2px black;
+				display: flex; align-items: center;
+				justify-content: space-between;
+				}
+				.Nav ul li a{text-decoration: none;color: white;}
+				.Nav ul li img{height: 45px;width:45px}
+
+				.Nav #Home{text-align: center;padding: 0 10%;box-shadow: 0 0 0 0 black;display: block;font-size:28px;}
+
+				.Nav #Salsas{background-color: #ff6f90;}
+				.Nav #Ensaladas{background-color: #ec7d7d;}
+				.Nav #Guisos{background-color: #fcad75;}
+				.Nav #Pasta{background-color: #ffe669;}
+				.Nav #Carne{background-color: #c5ff78;}
+				.Nav #Pollo{background-color: #39ffb6;}
+				.Nav #Huevo{background-color: #64e2ff;}
+				.Nav #Pescado{background-color: #5589ff;}
+				.Nav #Postres{background-color: #7c73ff;}
+
+				.Nav.Abierto #Salsas:hover{font-size: 25px;}
+				.Nav.Abierto #Ensaladas:hover{font-size: 25px;}
+				.Nav.Abierto #Guisos:hover{font-size: 25px;}
+				.Nav.Abierto #Pasta:hover{font-size: 25px;}
+				.Nav.Abierto #Carne:hover{font-size: 25px;}
+				.Nav.Abierto #Pollo:hover{font-size: 25px;}
+				.Nav.Abierto #Huevo:hover{font-size: 25px;}
+				.Nav.Abierto #Pescado:hover{font-size: 25px;}
+				.Nav.Abierto #Postres:hover{font-size: 25px;}
+		
+
+	/*------------Icono Menu Mobile-----------*/
+		div.MenuIcon{
+			cursor: pointer;
+			height: 50px;
+			width: 55px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			position: fixed;
+			top: 50px;
+			right: 40px;
+			z-index: 1;
+			}
+			.MenuIcon div{
+				border: 1px solid white;
+				width: 100%;
+				height: 10px;
+				border-radius: 3px;
+				}
+				.MenuIcon.Abierto #Barra1{transform: rotate(45deg) scale(0.8);transform-origin: left; position: absolute; top: 5px;}
+				.MenuIcon.Abierto #Barra2{width: 95%;height: 100%;border-radius: 50%;position: absolute;left: -11px;transform-origin: left;}
+				.MenuIcon.Abierto #Barra3{transform: rotate(-45deg) scale(0.8);transform-origin: left; position: absolute;top: 36px;}
+
+
+
+.Transition{
+	transition-property: all;
+	transition-duration: 1s;
+}
+
+section{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 100%;
+	background-image: url(../Img/fondoOtros.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	padding: 0 70px;
+	}
+	section #Velo{
+		width: 100%;
+		height: 100%;
+		background-color: #332c205e;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	section #Titulo{
+		height: 100vh;
+		z-index: 10;
+		margin: 0;
+		display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+		}
+		#Titulo img{
+		width: 200px;
+		transform: rotateY(270deg);
+		margin-bottom: 10px;
+
+
+		animation-name: titleImg;
+		animation-duration: 1.5s;
+		animation-delay: .5s;
+		animation-fill-mode: both;
+		}
+		@keyframes titleImg {
+		0%{opacity: 0;}
+		100%{opacity: 1; transform: rotateY(0deg);}
+		}
+		#Titulo span{
+	    width: 100%;
+	    float: left;
+	    color: white;
+	    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+	    transform: translateY(-50px);
+    	opacity: 0;
+
+        animation-name: titleText;
+    	animation-timing-function:ease;
+    	animation-duration: 1s;
+    	animation-fill-mode: both;
+		}
+		h3 span{
+		font-family: 'Unica One', cursive;
+		font-size: 50px;
+	    text-align: center;
+	    color: white;
+		animation-delay: 0.6s;
+		animation-fill-mode: both;
+		}
+		@keyframes titleText {
+    	0% {transform: translateY(-50px); opacity: 0;
+     	clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);}
+		100% {transform: translateY(0); opacity: 1;
+	    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);}    
+		}
+	section #Titulo #back{
+		position: absolute;
+		top: 0;
+		left: 35px;
+		font-size: 125px;
+		font-family: 'Staatliches', cursive;
+		color: transparent;
+		-webkit-text-stroke: 1px white;
+	}
+	section .Fila{
+		display: flex;
+		justify-content: space-evenly;
+		align-items: flex-start;
+		width: 100%;
+		z-index: 10;
+	}
+	section .Receta{
+		font-family: 'Unica One', cursive;
+		background-color: #ffffffd8;
+		width: 600px;
+		border: 1px solid black;
+		border-radius: 15px;
+		margin-bottom: 85px;
+		}
+		.Receta h2{margin: 10px;cursor: default;}
+		.Receta .Descripcion{
+			width: 100%;
+			display: none;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+		}
+		.Receta .Descripcion ul.Ingredientes{
+			list-style-type: none;
+			padding: 0;
+			margin: 10px 10px;
+		}
+		.Receta .Descripcion ul.Elaboraciones{
+			font-family: 'Maven Pro', sans-serif;
+			list-style-type: upper-roman;
+			padding: 0 15px;
+			margin: 10px 10px;
+		}
+		.Receta .Descripcion#Croquetas ul.Elaboraciones,
+		.Receta .Descripcion#Empanadillas ul.Elaboraciones,
+		.Receta .Descripcion#Emparedados ul.Elaboraciones,
+		.Receta .Descripcion#Empanada ul.Elaboraciones,
+		.Receta .Descripcion#Panini ul.Elaboraciones,
+		.Receta .Descripcion#Burritos ul.Elaboraciones,
+		.Receta .Descripcion#Quiche ul.Elaboraciones{
+			margin: 10px 20px;
+		}
+		.Receta#Vacio{border: 0;}
+
+/*Media Querys Mobile: Width < 576px*/
+	@media screen and (max-width: 576px){
+		nav.Nav{width: 100vw;right:-100vw;}
+		nav.Nav ul li{padding: 0 65px;}
+
+
+	section{
+		z-index: 1; height: 100%; padding: 0 20px;background-image: url(../Img/fondoOtrosMobile.jpg);
+		}
+		section #Titulo h3{margin-bottom: 30px;}
+		section #Titulo span{font-size: 35px;}
+		section #Titulo img{width: 150px;}
+		section #Titulo a{display: none;}
+		section .Fila{flex-direction: column;}
+		section .Receta{width: 100%; margin-bottom: 85px;}
+		section .Receta li{font-size: 17px;}
+
+

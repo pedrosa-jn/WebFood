@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pollo y Pavo</title>
+		<link rel="shortcut icon" href="./Img/IconPollo.png"/>
+		<link rel="stylesheet" type="text/css" href="./css/EstiloPollos.css">
+		<link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	</head>
+	<body>
+
+		<nav class="Nav Transition">
+
+			<video autoplay loop muted src="./Vid/OnlineInk.mp4"></video>
+
+			<ul>
+				<li id="Home"><hr><a class="EnlaceMenu" href="./index.html">Home</a><hr></li>
+				<li id="Salsas"><a class="EnlaceMenu" href="./salsas.html">Salsas</a><img src="./Img/MenuSalsa.png"></li>
+				<li id="Ensaladas"><a class="EnlaceMenu" href="./ensaladas.html">Ensaladas</a><img src="./Img/MenuEnsalada.png"></li>
+				<li id="Guisos"><a class="EnlaceMenu" href="./guisos.html">Guisos</a><img src="./Img/MenuGuiso.png"></li>
+				<li id="Pasta"><a class="EnlaceMenu" href="./pastas.html">Pasta</a><img src="./Img/MenuPasta.png"></li>
+				<li id="Carne"><a class="EnlaceMenu" href="./carnes.html">Carne</a><img src="./Img/MenuCarne.png"></li>
+				<li id="Huevo"><a class="EnlaceMenu" href="./huevos.html">Huevo</a><img src="./Img/MenuHuevo.png"></li>
+				<li id="Pescado"><a class="EnlaceMenu" href="./pescados.html">Pesccado</a><img src="./Img/MenuPescado.png"></li>
+				<li id="Otros"><a class="EnlaceMenu" href="./otros.html">Otros</a><img src="./Img/MenuOtros.png"></li>
+				<li id="Postres"><a class="EnlaceMenu" href="./postres.html">Postres</a><img src="./Img/MenuPostre.png"></li>
+			</ul>
+
+			<div class="MenuIcon">
+				<div class="Transition" id="Barra1"></div>
+				<div class="Transition" id="Barra2"></div>
+				<div class="Transition" id="Barra3"></div>	
+			</div>
+
+			<script type="text/javascript">
+				$ (function(){
+					$(".MenuIcon").click(function(){
+						console.log("click")
+						
+					$(".MenuIcon,.Nav,body").toggleClass("Abierto")
+				});
+				});
+			</script>
+		</nav>
+
+		<section><div id="Velo"></div>
+			
+			<div id="Titulo">
+				<a href="./index.html"><div id="back"><</div></a>
+				<img src="./Img/IconPollo.png">
+				<h3>
+					<span>Pollo y Pavo</span>
+				</h3>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador1">Pollo en Pepitoria</h2>
+					<div class="Descripcion" id="Pepitoria">
+					<ul class="Ingredientes">
+						<li>Un pollo troceado o pechugas de pollo</li><hr>
+						<li>1 cebolla</li><hr>
+						<li>3 dientes de ajo</li><hr>
+						<li>Vino</li><hr>
+						<li>Colorante</li><hr>
+						<li>Zumo de limón</li><hr>
+						<li>Laurel</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se dora la cebolla y el ajo sin tostar.</li><br>
+						<li>Se añade el pollo salpimentado, una hoja de laurel, el vino y el zumo del limón.</li><br>
+						<li>Se marea todo y se mete en la olla con un poco de azafrán unos 20 minutos.</li><br>
+						<li>Se añade una yema para trabar la salsa.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador1").click(function(){
+								console.log("click")
+								
+							$("#Pepitoria").slideToggle(1500)
+						});
+						});
+					</script>
+
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador2">Pollo de la Abuela Carmen</h2>
+					<div class="Descripcion" id="PolloAbCarmen">
+					<ul class="Ingredientes">
+						<li>Un pollo troceado o muslos de pollo.</li><hr>
+						<li>Ajo (2 ó 3 dientes)</li><hr>
+						<li>2 cebollas</li><hr>
+						<li>Un vaso de vino blanco</li><hr>
+						<li>Aceite</li><hr>
+						<li>Avecrem</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se salpimenta el pollo y se sofrie con varios ajos picados en una sartén bien cubierta con aceite.</li><br>
+						<li>Cuando estén dorados se apartan.</li><br>
+						<li>En ese mismo aceite se dora la cebolla previamente picada.</li><br>
+						<li>Cuando esté dorada se le añade el pollo y el vino blanco que se deja evaporar unos minutos.</li><br>
+						<li>Añadimos luego agua hasta cubrirlo y avecrem.</li><br>
+						<li>Se deja cocer un buen rato o se mete en la olla a presión.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador2").click(function(){
+								console.log("click")
+								
+							$("#PolloAbCarmen").slideToggle(1500)
+						});
+						});
+					</script>
+
+				</div>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador3">Pollo al Horno de la Abuela Cheli</h2>
+					<div class="Descripcion" id="HornoCheli">
+					<ul class="Ingredientes">
+						<li>Un pollo entero</li><hr>
+						<li>Un limón</li><hr>
+						<li>Una pastilla de avecrem</li><hr>
+						<li>Aceite</li><hr>
+						<li>Sal y perejil</li><hr>
+						<li>Un vaso de vino blanco</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Precalentamos el horno unos 10 minutos.</li><br>
+						<li>Se salpimenta el pollo y se mete un limón y la pastilla de avecrem en su interior.</li><br>
+						<li>Se pone en una fuente de horno y se embadurna bien con aceite y el vaso de vino.</li><br>
+						<li>Metemos en el horno unos 90 minutos a horno fuerte al principio y luego un poco más suave.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador3").click(function(){
+								console.log("click")
+								
+							$("#HornoCheli").slideToggle(1500)
+						});
+						});
+					</script>
+
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador4">Pollo a la Sopa de Cebolla</h2>
+					<div class="Descripcion" id="PolloCebolla">
+					<ul class="Ingredientes">
+						<li>Un pollo troceado</li><hr>
+						<li>Un sobre de sopa de cebolla</li><hr>
+						<li>Aceite</li><hr>
+						<li>Un vaso de vino blanco</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Precalentamos el horno unos 10 minutos.</li><br>
+						<li>Se salpimenta el pollo y se pone en una fuente de horno y se embadurna bien con el sobre de sopa de cebolla, el aceite y el vaso de vino.</li><br>
+						<li>Metemos en el horno unos 60 minutos a horno fuerte al principio y luego un poco más suave.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador4").click(function(){
+								console.log("click")
+								
+							$("#PolloCebolla").slideToggle(1500)
+						});
+						});
+					</script>
+
+				</div>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador5">Pollo al Horno</h2>
+					<div class="Descripcion" id="PolloHorno">
+					<ul class="Ingredientes">
+						<li>Un pollo entero</li><hr>
+						<li>2 o 3 dientes de ajo</li><hr>
+						<li>Perejil</li><hr>
+						<li>Aceite</li><hr>
+						<li>Un vaso de vino blanco</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Precalentamos el horno unos 10 minutos.</li><br>
+						<li>Hacemos un majado con el ajo, el perejil y aceite.</li><br>
+						<li>Se salpimenta el pollo y con un pincel se unta con el majado anterior.</li><br>
+						<li>Se pone en una fuente de horno, añadimos el vino y metemos en el horno unos 60 minutos a horno fuerte al principio y luego un poco más suave.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador5").click(function(){
+								console.log("click")
+								
+							$("#PolloHorno").slideToggle(1500)
+						});
+						});
+					</script>
+
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador6">Pollo con Cerveza y Yogur</h2>
+					<div class="Descripcion" id="CervezaYogur">
+					<ul class="Ingredientes">
+						<li>Un pollo troceado</li><hr>
+						<li>Una cabeza de ajos</li><hr>
+						<li>Una cerveza</li><hr>
+						<li>Un yogur natural</li><hr>
+						<li>Aceite y sal</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se limpia bien el pollo y se salpimenta.</li><br>
+						<li>Se embadurna el pollo troceado con cuatro dientes de ajo y se tiene un rato.</li><br>
+						<li>Una vez dorado se fríen tres o cuatro dientes de ajo.</li><br>
+						<li>En el vaso de la batidora se añade un diente crudo, una cerveza y un yogur natural. Se bate todo.</li><br>
+						<li>Se vierte la salsa en la cacerola y se añade el pollo.</li><br>
+						<li>Se tiene cociendo un buen rato.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador6").click(function(){
+								console.log("click")
+								
+							$("#CervezaYogur").slideToggle(1500)
+						});
+						});
+					</script>
+
+				</div>
+			</div>
+
+			<div class="Fila">
+				<div class="Receta">
+					<h2 id="Disparador7">Pollo con Limón</h2>
+					<div class="Descripcion" id="PolloLimon">
+					<ul class="Ingredientes">
+						<li>Un pollo</li><hr>
+						<li>Limón</li><hr>
+						<li>Aceite</li><hr>
+						<li>Sal y pimienta</li><hr>
+						<li>Avecrem</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se limpia bien el pollo y se salpimenta.</li><br>
+						<li>Se coloca en una fuente y se le añade el zumo de un limón y un poco de aceite y se deja macerar un rato.</li><br>
+						<li>Cuando esté macerado se le añade vino blanco, agua y avecrem y se mete en el horno unos 80 minutos.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador7").click(function(){
+								console.log("click")
+								
+							$("#PolloLimon").slideToggle(1500)
+						});
+						});
+					</script>
+
+				</div>
+				<div class="Receta">
+					<h2 id="Disparador8">Pavo al Oporto</h2>
+					<div class="Descripcion" id="PavoOporto">
+					<ul class="Ingredientes">
+						<li>2kg de pavo</li><hr>
+						<li>24 higos</li><hr>
+						<li>50cc de oporto</li><hr>
+						<li>Avecrem</li><hr>
+						<li>Aceite</li><hr>
+						<li>Mantequilla</li><hr>
+					</ul>
+					<ul class="Elaboraciones">
+						<li>Se dejan los higos en maceración con el vino de oporto en un recipiente bien cerrado durante 36 horas.</li><br>
+						<li>Se dora el pavo con aceite y mantequilla durante se riega con el vino y los higos hasta que el vino se vaya consumiendo.</li><br>
+						<li>Se mezcla con un caldo hecho con 1/2 litro de agua y avecrem y se mete en el horno precalentado a 150 grados durante 45 minutos.</li><br>
+						<li>Si la salsa queda clara se le añade un poco de maizena.</li>
+					</ul>
+					</div>
+
+					<script type="text/javascript">
+						$ (function(){
+							$("#Disparador8").click(function(){
+								console.log("click")
+								
+							$("#PavoOporto").slideToggle(1500)
+						});
+						});
+					</script>
+
+				</div>
+			</div>
+
+
+
+
+		</section>
+
+	</body>
+</html>

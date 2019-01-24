@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Salsas</title>
+		<title>Ensaladas</title>
 		<link rel="shortcut icon" href="./Img/IconEnsalada.png"/>
 		<link rel="stylesheet" type="text/css" href="./css/EstiloEnsalada.css">
 		<link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
@@ -13,32 +13,35 @@
 	</head>
 	<body>
 
-		<nav class="Navegador">
+		<nav class="Nav Transition">
+
+			<video autoplay loop muted src="./Vid/OnlineInk.mp4"></video>
+
 			<ul>
-				<li><hr><a class="EnlaceMenu" id="Home" href="./index.html">Home</a><hr></li>
-				<li><a class="EnlaceMenu" href="./salsas.html"><img src="./Img/IconSalsa.png">Salsas</a></li>
-				<li><a class="EnlaceMenu" href="./guisos.html"><img src="./Img/IconGuiso.png">Guisos</a></li>
-				<li><a class="EnlaceMenu" href="./pastas.html"><img src="./Img/IconPasta.png">Pasta</a></li>
-				<li><a class="EnlaceMenu" href="./carnes.html"><img src="./Img/IconCarne.png">Carne</a></li>
-				<li><a class="EnlaceMenu" href="./pollos.html"><img src="./Img/IconPollo.png">Pollo</a></li>
-				<li><a class="EnlaceMenu" href="./huevos.html"><img src="./Img/IconHuevo.png">Huevo</a></li>
-				<li><a class="EnlaceMenu" href="./pescados.html"><img src="./Img/IconPescado.png">Pesccado</a></li>
-				<li><a class="EnlaceMenu" href="./otros.html"><img src="./Img/IconOtros.png">Otros</a></li>
-				<li><a class="EnlaceMenu" href="./postres.html"><img src="./Img/IconPostre.png">Postres</a></li>
+				<li id="Home"><hr><a class="EnlaceMenu" href="./index.html">Home</a><hr></li>
+				<li id="Salsas"><a class="EnlaceMenu" href="./salsas.html">Salsas</a><img src="./Img/MenuSalsa.png"></li>
+				<li id="Guisos"><a class="EnlaceMenu" href="./guisos.html">Guisos</a><img src="./Img/MenuGuiso.png"></li>
+				<li id="Pasta"><a class="EnlaceMenu" href="./pastas.html">Pasta</a><img src="./Img/MenuPasta.png"></li>
+				<li id="Carne"><a class="EnlaceMenu" href="./carnes.html">Carne</a><img src="./Img/MenuCarne.png"></li>
+				<li id="Pollo"><a class="EnlaceMenu" href="./pollos.html">Pollo</a><img src="./Img/MenuPollo.png"></li>
+				<li id="Huevo"><a class="EnlaceMenu" href="./huevos.html">Huevo</a><img src="./Img/MenuHuevo.png"></li>
+				<li id="Pescado"><a class="EnlaceMenu" href="./pescados.html">Pesccado</a><img src="./Img/MenuPescado.png"></li>
+				<li id="Otros"><a class="EnlaceMenu" href="./otros.html">Otros</a><img src="./Img/MenuOtros.png"></li>
+				<li id="Postres"><a class="EnlaceMenu" href="./postres.html">Postres</a><img src="./Img/MenuPostre.png"></li>
 			</ul>
-			<div class="Menu Transitions">
-					<div class="Transitions" id="barra1"></div>
-					<div class="Transitions" id="barra2"></div>
-					<div class="Transitions" id="barra3"></div>
+
+			<div class="MenuIcon">
+				<div class="Transition" id="Barra1"></div>
+				<div class="Transition" id="Barra2"></div>
+				<div class="Transition" id="Barra3"></div>	
 			</div>
 
 			<script type="text/javascript">
 				$ (function(){
-					$(".Menu").click(function(){
+					$(".MenuIcon").click(function(){
 						console.log("click")
 						
-					$("nav.Navegador ul").slideToggle(2000)
-					$(".Menu,body,ul").toggleClass("Abierto")
+					$(".MenuIcon,.Nav,body").toggleClass("Abierto")
 				});
 				});
 			</script>
@@ -431,44 +434,6 @@
 					</script>
 
 				</div>
-			</div>
-
-			<div class="Fila">
-				<div class="Receta">
-					<h2 id="Disparador13">Huevos Rellenos</h2>
-					<div class="Descripcion" id="HuevosRellenos">
-					<ul class="Ingredientes">
-						<li>1 huevo por persona</li><hr>
-						<li>Atún</li><hr>
-						<li>Mayonesa</li><hr>
-						<li>Tomate</li><hr>
-					</ul>
-					<ul class="Elaboraciones">
-						<li>En un cazo ponemos agua a hervir con sal.</li><br>
-						<li>Cuando hierva añadimos los huevos y los dejamos hervir durante unos 15 minutos.</li><br>
-						<li>Pasado este tiempo los retiramos del fuego y los dejamos enfriar.</li><br>
-						<li>Una vez fríos, los pelamos y abrimos por la mitad.</li><br>
-						<li>Retiramos las yemas y las ponemos en un bol.</li><br>
-						<li>Añadimos el atún, mayonesa y un poquito de tomate frito.</li><br>
-						<li>Mezclamos y rellenamos los huevos con esta pasta.</li><br>
-						<li>Preparamos un poco de mayonesa y cubrimos los huevos con ella.</li><br>
-						<li>Adornamos con pimiento rojo y aceitunas.</li><br>
-						<li>Metemos en la nevera y servimos frío.</li>
-					</ul>
-					</div>
-
-					<script type="text/javascript">
-						$ (function(){
-							$("#Disparador13").click(function(){
-								console.log("click")
-								
-							$("#HuevosRellenos").slideToggle(1500)
-						});
-						});
-					</script>
-
-				</div>
-				<div class="Receta" id="Vacio"></div>
 			</div>
 
 
